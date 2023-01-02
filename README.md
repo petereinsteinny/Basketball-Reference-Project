@@ -6,7 +6,7 @@ I love basketball and have been a Knicks fan since birth. Through watching most 
 2. HTML
 3. Heroku
 ## Sources Used
-1. https://www.basketball-reference.com/
+1. [Basketball Reference](https://www.basketball-reference.com/)
 
 
 Please feel free to reach out to me on my [LinkedIn](https://www.linkedin.com/in/peter-einstein-cfa/) with any questions you may have.
