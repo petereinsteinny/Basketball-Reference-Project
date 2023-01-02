@@ -397,7 +397,7 @@ app.config.suppress_callback_exceptions = True
 app.layout = html.Div(children=[ 
     html.Div(children=[
         #Creating the header dropdown here
-        html.H1('Basketball Career Visualizer', 
+        html.H1('NBA Career Visualizer', 
             style={'textAlign': 'center',
                    'color': '#503D36',
                    'font-size': 32,
