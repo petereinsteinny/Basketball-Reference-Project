@@ -6,4 +6,4 @@ I love basketball and have been a Knicks fan since birth. Through watching most 
 2. HTML
 3. Heroku
 
-Please feel free to reach out to me on my LinkedIn with any questions you may have: https://www.linkedin.com/in/peter-einstein-cfa/
+Please feel free to reach out to me on my [LinkedIn](https://www.linkedin.com/in/peter-einstein-cfa/) with any questions you may have.
