@@ -1,7 +1,7 @@
 # NBA Career Visualizer
 ## Motivation:
-I love basketball and have been a Knicks fan since birth. Through watching most every game, I have seen the ups and downs of team management and player development, and often find myself playing the role of General Manager in my head. I built this tool to report on trends in player performance, identify the next generation of superstars, and to substantiate the greatness of established players. You can find my interactive project (https://nba-career-visualizer.herokuapp.com/ "here").
-
+I love basketball and have been a Knicks fan since birth. Through watching most every game, I have seen the ups and downs of team management and player development, and often find myself playing the role of General Manager in my head. I built this tool to report on trends in player performance, identify the next generation of superstars, and to substantiate the greatness of established players. You can find my interactive project [https://nba-career-visualizer.herokuapp.com/] "here").
+[link text itself]: http://www.reddit.com
 ## Technologies Used
 1. Python
 2. HTML
