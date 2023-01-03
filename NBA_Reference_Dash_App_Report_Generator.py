@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[1]:
 
 
 #importing packages
@@ -15,12 +15,12 @@ from sklearn.cluster import KMeans
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[20]:
+# In[16]:
 
 
 #Get list of active players
 def refresh_active_players():
-    global players_df
+    global players_df, unique_players
     players_df=pd.read_html('https://www.basketball-reference.com/leagues/NBA_2023_per_game.html')[0]
     players_df=players_df[players_df['Player']!='Player']
     players_df=players_df.iloc[:,1:5]
@@ -40,11 +40,14 @@ def refresh_active_players():
             links.append(url)
 
     players_df['Link']=links
+    
+    
+    unique_players=players_df.index.unique()
 
     players_df.to_csv('Active Players.csv')
 
 
-# In[21]:
+# In[17]:
 
 
 #Refresh player stats
@@ -62,7 +65,7 @@ def refresh_player_stats():
     formatted_player_queries_advanced.to_csv('Formatted_Player_Queries_Advanced.csv')
 
 
-# In[22]:
+# In[18]:
 
 
 #Refresh Rosters
@@ -80,7 +83,7 @@ def refresh_rosters():
     rosters_df.to_csv('Active Rosters.csv')
 
 
-# In[23]:
+# In[19]:
 
 
 #Function to perform all refreshing tasks
@@ -111,7 +114,7 @@ def refresh_all():
 #    time.sleep(1) # wait one minute
 
 
-# In[24]:
+# In[20]:
 
 
 #Creating player class to inherit attributes and functions
@@ -353,7 +356,7 @@ class Player:
         return top_3_neigh
 
 
-# In[25]:
+# In[21]:
 
 
 #Creating a team class to be used in returning active rosters in the dash player list dropdown
@@ -400,8 +403,20 @@ class Team():
         return rosters_df[rosters_df['Tm']==self.name]
 
 
-# In[1]:
+# In[25]:
 
 
 refresh_all()
+
+
+# In[24]:
+
+
+player_queries_standard
+
+
+# In[ ]:
+
+
+
 
