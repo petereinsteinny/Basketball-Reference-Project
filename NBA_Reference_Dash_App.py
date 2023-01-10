@@ -1,27 +1,35 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[110]:
+# In[103]:
 
 
 #importing packages
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import statsmodels
+import matplotlib
 import matplotlib.pyplot as plt
+import requests
+import bs4
+from bs4 import BeautifulSoup
 import dash
+import dash_daq as daq
 from dash import html
 from dash import dcc
 from dash.dependencies import Input,Output, State
+import plotly
 import plotly.graph_objects as go
 import plotly.express as px
 from dash import no_update
+import sklearn
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
+get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[111]:
+# In[161]:
 
 
 #Creating player class to inherit attributes and functions
@@ -79,6 +87,15 @@ class Player:
         #Function to get player age
         return self.get_info('Age')
     
+    def get_status(self):
+        val=players_df.loc[self.name]['Status']
+        
+        if type(val) is str:
+            return val
+        else:
+            return val[0]
+    
+    
     def get_position(self):
         #Function to get most recent player position
         return self.get_info('Pos')
@@ -107,7 +124,7 @@ class Player:
         return self.get_info('Tm')
     
     def get_reports(self):
-        global positions
+        global positions,players_df
         #Querying Basketball Reference to get the Standard (Per Game) and Advanced tables
         req=requests.get(self.get_player_url()).text
         #Creating one big soup to house all tables
@@ -127,15 +144,21 @@ class Player:
             else:
                 standard_df[pos]=False
         
+        player_name=self.name
+        #Adding in player_status
+        player_status=self.get_status()
+        
         #Adding a Player Name column so the Standard and Advanced tables can be queried (thus using caching and eliminating need to query website again)
-        standard_df['Player Name']=self.name
+        standard_df['Player Name']=player_name
+        standard_df['Status']=player_status
         
         #Filtering the original soup for the Advanced data table  
         advanced_soup=orig_soup.find(id='div_advanced')
         advanced_table=advanced_soup.find_all('table')
         advanced_df = pd.read_html(str(advanced_table))[0]
         advanced_df[positions]=standard_df[positions]
-        advanced_df['Player Name']=self.name
+        advanced_df['Player Name']=player_name
+        advanced_df['Status']=player_status
         
         #Ensuring that all columns converted to numeric where possible in both Standard and Advanced tables
         standard_df=standard_df.apply(pd.to_numeric,errors='ignore')
@@ -180,7 +203,7 @@ class Player:
         return df[df['Player Name']==self.name]
         
     
-    def get_full_peer_group(self):
+    def get_full_peer_group(self,include_inactives):
         #Creating function to retrieve a base player's peer group to be used in the clustering analysis
         global formatted_player_queries_advances, positions
         player_age=self.get_age()
@@ -190,6 +213,10 @@ class Player:
         else:
             comparables_df=formatted_player_queries_advanced.copy()
         
+        #filtering comparables_df for include_inactives flag
+        if include_inactives==False:
+            comparables_df=comparables_df[comparables_df['Status']=='Active']
+            
         #Setting up a positions_array so that the comparables_df can be filtered for peers that shared any of the same positions as the base player (sum positions_array>0)
         positions_array=self.get_formatted_per_game('Advanced')[positions].iloc[0]
         positions_array=positions_array[positions_array== True].index
@@ -198,11 +225,11 @@ class Player:
 
         return players_array
     
-    def get_top_3_cluster(self):
+    def get_top_3_cluster(self,include_inactives):
         global ws_df
         #Creating a function to filter the full peer group to return up to 3 most similar players
         #Getting peer group using get_full_peer_group function
-        comparable_list=self.get_full_peer_group()
+        comparable_list=self.get_full_peer_group(include_inactives)
         #Copying the ws_df (Index: Player_name, Columns: Age, Rows: Win Shares)
         comparable_df=ws_df.copy()
         player_name=self.name
@@ -263,9 +290,10 @@ class Player:
         return top_3_neigh
 
 
-# In[112]:
+# In[162]:
 
 
+rosters_df=[]
 #Creating a team class to be used in returning active rosters in the dash player list dropdown
 class Team():
     def __init__(self,name):
@@ -310,7 +338,7 @@ class Team():
         return rosters_df[rosters_df['Tm']==self.name]
 
 
-# In[113]:
+# In[170]:
 
 
 players_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Players.csv?raw=true')
@@ -318,14 +346,11 @@ players_df.set_index('Player',inplace=True)
 player_queries_standard=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Unformatted_Player_Queries_Standard.csv?raw=true')
 player_queries_advanced=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Unformatted_Player_Queries_Advanced.csv?raw=true')
 formatted_player_queries_standard=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Formatted_Player_Queries_Standard.csv?raw=true')
-formatted_player_queries_standard.drop('Unnamed: 0',axis=1, inplace=True)
 formatted_player_queries_advanced=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Formatted_Player_Queries_Advanced.csv?raw=true')
-formatted_player_queries_advanced.drop('Unnamed: 0',axis=1, inplace=True)
 rosters_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Rosters.csv?raw=true')
 
 
-# In[114]:
-
+# In[164]:
 
 
 #Dynamically retrieving the last season so the portion of regular season games played (82/n). This transforms the current season to date stats into a full-season value.
@@ -353,9 +378,13 @@ ws_df['Career']=ws_df.sum(axis=1)
 # In[115]:
 
 
-unique_players=players_df.index.sort_values().unique().tolist()
+active_players=players_df.index.sort_values().unique().tolist()
 #Converting the unique_players list into the dropdown format to be used in Dash
-all_players_choices=choices=[{'label':i, 'value':i} for i in unique_players]
+active_players_choices=[{'label':i, 'value':i} for i in active_players]
+
+all_players=sorted(formatted_player_queries_standard['Player Name'].unique())
+
+all_players_choices=[{'label':i, 'value':i} for i in all_players]
 
 #Getting a list of unique teams from the players_df. Getting rid of 'TOT' as this indicates 'Total' as opposed to an individual team
 unique_teams=players_df[(players_df['Tm']!='TOT') & (players_df['Tm']!='Tm')]['Tm'].sort_values().unique().tolist()
@@ -373,17 +402,18 @@ df=test_player.get_formatted_per_game('Advanced')
 advanced_cols=df.select_dtypes(include=np.number).drop('Age',axis=1).columns.to_list()
 
 
-# In[121]:
-
-
 #Wrote project description to be used in Dash
 project_description=project_description='The below dashboard uses the K-Means Clustering Machine Learning technique to return up to 3 comparable active NBA players on a Win Share (WS) by Age basis. These comparable players are sorted from most-to-least similar in the legend for each chart. Basketball Reference defines this metric as a "player statistic which attempts to divvy up credit for team success to the individuals on the team". For more information on this project, or to reach out to me with any questions, please refer to my:'
 
 
-# In[1]:
+# In[167]:
+
 
 #Creating dictionary to house player cluster outputs
 player_clusters={}
+
+#Setting include_inactive variable to be False
+include_inactives=False
 
 #Instantiating Dash app
 app=dash.Dash(__name__)
@@ -397,7 +427,7 @@ app.config.suppress_callback_exceptions = True
 app.layout = html.Div(children=[ 
     html.Div(children=[
         #Creating the header dropdown here
-        html.H1('NBA Career Visualizer', 
+        html.H1('Basketball Reference Performance Visualizer', 
             style={'textAlign': 'center',
                    'color': '#503D36',
                    'font-size': 32,
@@ -427,24 +457,26 @@ app.layout = html.Div(children=[
                 style={'textAlign': 'left', 
                        'color':'blue',
                    'font-size': 20}),
-        html.Br(),
+        html.Br()
+    ]),
+    html.Div(children=[
         html.Div(children=[
-            #Creating the Team dropdown header and Dropdown here. Setting it to 50% and inline-block so it goes side by side with the Player Dropdown
+            #Creating the Team dropdown header and Dropdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
             html.H2('Team Dropdown:', 
-                    style={'textAlign': 'left',
+                    style={'textAlign': 'center',
                            'color': '#503D36',
                            'font-size': 20}),
             dcc.Dropdown(id='team-dropdown',
                      options=[{'label':i, 'value':i} for i in unique_teams],
                      value='ALL',
                      placeholder="Select a Team Here",
-                     searchable=False)
-        ],style={'width': '50%', 'display': 'inline-block'}),
+                     searchable=True)
+        ],style={'width': '33.33%', 'display': 'inline-block'}),
         
-        #Creating the Player dropdown header and Dropdown here. Setting it to 50% and inline-block so it goes side by side with the Team Dropdown
+        #Creating the Player dropdown header and Dropdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
         html.Div(children=[
             html.H2('Player Dropdown:', 
-                    style={'textAlign': 'left',
+                    style={'textAlign': 'center',
                            'color': '#503D36',
                            'font-size': 20}),
             dcc.Dropdown(id='player-dropdown',
@@ -452,40 +484,65 @@ app.layout = html.Div(children=[
                          value=unique_players[0],
                          placeholder="Select a Player Here",
                          searchable=True),
-        ],style={'width': '50%', 'display': 'inline-block'}),
+        ],
+                 style={'width': '33.33%', 
+                        'display': 'inline-block'}),
+        #Creating the Include Inactive Players Header and Dreopdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
+        html.Div(children=[
+            html.H2('Include Inactive Players?', 
+                    style={'textAlign': 'center',
+                           'color': '#503D36',
+                           'font-size': 20}),
+            daq.ToggleSwitch(id='inactive-toggle-switch',
+                             value=False,
+                             color='green'),
+            html.Div(id='inactive-toggle-switch-output')],
+                 style={'width': '33.33%',
+                        'display': 'inline-block',
+                       'verticalAlign':'top'}),
         html.Br()
     ]),
-    
     #Creating the Standard Statistics header and dropdown here as well as the chart. Setting it to 50% and inline-block so it goes side by side with the Advanced Dropdown
     html.Div(children=[
-        html.H2('Standard Statistics:', style={'margin-right': '2em'}),
+        html.H2('Standard Statistics:', 
+                style={'textAlign': 'center',
+                      'font-size': 20}),
         
         dcc.Dropdown(id='standard-dropdown',
                  options=[{'label':i, 'value':i} for i in standard_cols],
                  value='PTS',
                  placeholder="Select a Standard Statistic Here",
-                 searchable=False
+                 searchable=True
                 ),
         dcc.Graph(id='standard-chart', 
-                       style={'display': 'flex','flex-direction':'column'}),
+                       style={'display': 'flex',
+                              'flex-direction':'column'}),
 
-    ],style={'width': '50%', 'display': 'inline-block'}),
+    ],
+             style={'width': '50%', 
+             'display': 'inline-block'}),
     
     #Creating the Advanced Statistics header and dropdown here as well as the chart. Setting it to 50% and inline-block so it goes side by side with the Standard Dropdown
     
     html.Div(children=[
-        html.H2('Advanced Statistics:', style={'margin-right': '2em'}),
+        html.H2('Advanced Statistics:', 
+                style={'textAlign': 'center',
+                      'font-size': 20}),
         dcc.Dropdown(id='advanced-dropdown',
                  options=[{'label':i, 'value':i} for i in advanced_cols],
                  value='WS',
                  placeholder="Select an Advanced Statistic here",
-                 searchable=False
+                 searchable=True
                 ),
     
         dcc.Graph(id='advanced-chart', 
-                       style={'display': 'flex','flex-direction':'column'})
-    ],style={'width': '50%', 'display': 'inline-block'}),
+                       style={'display': 'flex',
+                              'flex-direction':'column'})
+    ],
+             style={'width': '50%', 
+             'display': 'inline-block'}),
 ])
+
 
 #Creating the first callback to update the player-dropdown based on the values from the team-dropdown and player-dropdown
 @app.callback([Output(component_id='player-dropdown', component_property='options'),
@@ -519,20 +576,28 @@ def get_player_options(team_value,player_value):
                Output(component_id='advanced-chart', component_property='figure')],
               [Input(component_id='player-dropdown', component_property='value'),
                Input(component_id='standard-dropdown',component_property='value'),
-               Input(component_id='advanced-dropdown',component_property='value')])
+               Input(component_id='advanced-dropdown',component_property='value'),
+               Input('inactive-toggle-switch', 'value')])
 
-def get_stats(player_value,standard_stat_value,advanced_stat_value):
-    global player_clusters
+def get_stats(player_value,standard_stat_value,advanced_stat_value,inactive_toggle_switch_value):
+    global player_clusters, include_inactives
     #Instantiating the Player value to retrieve their top 3 cluster
     this_player=Player(player_value)
     
+    #Wiping out player_clusters dictionary if inactive_toggle_switch_value changes
+    if include_inactives!=inactive_toggle_switch_value:
+        include_inactives=inactive_toggle_switch_value
+        player_clusters={}
+    
+    #Using caching for quick retrieval of player clusters
     if player_value not in player_clusters:
-        players_list=this_player.get_top_3_cluster()
+        players_list=this_player.get_top_3_cluster(inactive_toggle_switch_value)
+        #Inserting the player name into their top 3 list so the player and their best peer group are all included
         players_list.insert(0,player_value)
         player_clusters[player_value]=players_list
     else:
         players_list=player_clusters[player_value]
-    #Inserting the player name into their top 3 list so the player and their best peer group are all included
+        
     #Creating the players_df_standard from the players_list
     players_df_standard=formatted_player_queries_standard[formatted_player_queries_standard['Player Name'].isin(players_list)]
     #Creating the fig_standard line chart
@@ -571,8 +636,19 @@ def get_stats(player_value,standard_stat_value,advanced_stat_value):
     fig_advanced.update_layout(xaxis_title='Age',yaxis_title=advanced_stat_value,title='{} {}'.format(player_value,advanced_stat_value),template="presentation",title_x=0.5,font={'size':14},legend={'font':{'size':12},'orientation':'h','xanchor' : 'center', 'x' : 0.5, 'y': -.3})
     return fig_standard,fig_advanced
 
-
 # Run the app
 if __name__ == '__main__':
     app.run_server()
+
+
+# In[169]:
+
+
+daq.__version__
+
+
+# In[ ]:
+
+
+
 
