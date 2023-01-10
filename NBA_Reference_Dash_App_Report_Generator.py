@@ -15,20 +15,20 @@ from sklearn.cluster import KMeans
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[16]:
+# In[35]:
 
 
 #Get list of active players
-def refresh_active_players():
+def refresh_active_players(year):
     global players_df, unique_players
-    players_df=pd.read_html('https://www.basketball-reference.com/leagues/NBA_2023_per_game.html')[0]
+    url='https://www.basketball-reference.com/leagues/NBA_'+str(year)+'_per_game.html'
+    grab = requests.get(url).text
+    players_df=pd.read_html(grab)[0]
     players_df=players_df[players_df['Player']!='Player']
     players_df=players_df.iloc[:,1:5]
     players_df.set_index('Player',inplace=True)
     #Get links for all active players to be used in querying
-    urls = 'https://www.basketball-reference.com/leagues/NBA_2023_per_game.html'
-    grab = requests.get(urls)
-    soup = BeautifulSoup(grab.text, 'html.parser')
+    soup = BeautifulSoup(grab, 'html.parser')
     soup=soup.find('table')
 
     links=[]
@@ -40,6 +40,7 @@ def refresh_active_players():
             links.append(url)
 
     players_df['Link']=links
+    players_df['Status']='Active'
     
     
     unique_players=players_df.index.unique()
@@ -47,25 +48,69 @@ def refresh_active_players():
     players_df.to_csv('Active Players.csv')
 
 
-# In[17]:
+# In[38]:
+
+
+def get_historical_players(first_year,last_year):
+    global players_df,unique_players
+    time_period=[*range(first_year,last_year)][::-1]
+    
+    for year in time_period:
+        url='https://www.basketball-reference.com/leagues/NBA_'+str(year)+'_per_game.html'
+        grab = requests.get(url).text
+        hist_players_df=pd.read_html(grab)[0]
+        hist_players_df=hist_players_df[hist_players_df['Player']!='Player']
+        hist_players_df=hist_players_df.iloc[:,1:5]
+        hist_players_df.set_index('Player',inplace=True)
+        #Get links for all active players to be used in querying
+        soup = BeautifulSoup(grab, 'html.parser')
+        soup=soup.find('table')
+
+        links=[]
+
+        for link in soup.find_all("a"):
+            data = link.get('href')
+            if data[:9] =='/players/'and data[-5:]=='.html':
+                url='https://www.basketball-reference.com'+data
+                links.append(url)
+
+        hist_players_df['Link']=links
+        hist_players_df['Status']='Inactive'
+        
+        hist_players_df=hist_players_df[hist_players_df.index.isin(unique_players)==False]
+        players_df=pd.concat([players_df,hist_players_df],axis=0)
+        unique_players=players_df.index.unique()
+        time.sleep(1.75)
+        
+
+
+# In[156]:
 
 
 #Refresh player stats
 def refresh_player_stats():
-    global unique_players,player_queries_standard,formatted_player_queries_advanced
+    global unique_players,player_queries_standard,player_queries_advanced,formatted_player_queries_standard,formatted_player_queries_advanced
     #Looping through the unique players list to populate data for each player.
+    populated_players=player_queries_standard['Player Name'].unique()
     for player in unique_players:
-        time.sleep(1.75)
         #Instantiating each Player so that their data can be generated and appended
-        this_player=Player(player)
-           
-    player_queries_standard.to_csv('Unformatted_Player_Queries_Standard.csv')
-    player_queries_advanced.to_csv('Unformatted_Player_Queries_Advanced.csv')
-    formatted_player_queries_standard.to_csv('Formatted_Player_Queries_Standard.csv')
-    formatted_player_queries_advanced.to_csv('Formatted_Player_Queries_Advanced.csv')
+        if player not in populated_players:
+            this_player=Player(player)
+            time.sleep(1.75)
+            
+    #Formatting files for export
+    player_queries_standard.sort_values(by=['Status','Player Name'],inplace=True)
+    player_queries_advanced.sort_values(by=['Status','Player Name'],inplace=True)
+    formatted_player_queries_standard.sort_values(by=['Status','Player Name'],inplace=True)
+    formatted_player_queries_advanced.sort_values(by=['Status','Player Name'],inplace=True)
+    
+    player_queries_standard.to_csv('Unformatted_Player_Queries_Standard.csv',index=False)
+    player_queries_advanced.to_csv('Unformatted_Player_Queries_Advanced.csv',index=False)
+    formatted_player_queries_standard.to_csv('Formatted_Player_Queries_Standard.csv',index=False)
+    formatted_player_queries_advanced.to_csv('Formatted_Player_Queries_Advanced.csv',index=False)
 
 
-# In[18]:
+# In[12]:
 
 
 #Refresh Rosters
@@ -83,38 +128,43 @@ def refresh_rosters():
     rosters_df.to_csv('Active Rosters.csv')
 
 
-# In[19]:
+# In[158]:
 
 
 #Function to perform all refreshing tasks
-def refresh_all():
-    global player_queries_standard, player_queries_advanced,formatted_player_queries_standard,formatted_player_queries_advanced, rosters_df
+def refresh_all(current_year,first_hist):
+    global players_df, unique_players, player_queries_standard, player_queries_advanced,formatted_player_queries_standard,formatted_player_queries_advanced, rosters_df
     print("I'm working...")
     
-    player_queries_standard=[]
-    player_queries_advanced=[]
-    formatted_player_queries_standard=[]
-    formatted_player_queries_advanced=[]
+    #Importing data files
+    player_queries_standard=pd.read_csv('Unformatted_Player_Queries_Standard.csv')
+    player_queries_advanced=pd.read_csv('Unformatted_Player_Queries_Advanced.csv')
+    formatted_player_queries_standard=pd.read_csv('Formatted_Player_Queries_Standard.csv')
+    formatted_player_queries_advanced=pd.read_csv('Formatted_Player_Queries_Advanced.csv')
+
     rosters_df=[]
     
-    refresh_active_players()
+    refresh_active_players(current_year)
     print("I'm done refreshing active players")
+    
+    #Filtering data files to wipe out active players and then refresh their statistics
+    player_queries_standard=player_queries_standard[player_queries_standard['Player Name'].isin(unique_players)==False]
+    player_queries_advanced=player_queries_advanced[player_queries_advanced['Player Name'].isin(unique_players)==False]
+    formatted_player_queries_standard=formatted_player_queries_standard[formatted_player_queries_standard['Player Name'].isin(unique_players)==False]
+    formatted_player_queries_advanced=formatted_player_queries_advanced[formatted_player_queries_advanced['Player Name'].isin(unique_players)==False]
+
+        
+    get_historical_players(first_hist,current_year)
+    print("I'm done refreshing historical players")
     refresh_player_stats()
     print("I'm done refreshing player stats")
     time.sleep(1.75)
     refresh_rosters()
     print("I'm done refreshing rosters")
     print("I'm done with all tasks")
-    
-
-#schedule.every().day.at("15:55").do(refresh_all)
-
-#while True:
-#    schedule.run_pending()
-#    time.sleep(1) # wait one minute
 
 
-# In[20]:
+# In[124]:
 
 
 #Creating player class to inherit attributes and functions
@@ -172,6 +222,15 @@ class Player:
         #Function to get player age
         return self.get_info('Age')
     
+    def get_status(self):
+        val=players_df.loc[self.name]['Status']
+        
+        if type(val) is str:
+            return val
+        else:
+            return val[0]
+    
+    
     def get_position(self):
         #Function to get most recent player position
         return self.get_info('Pos')
@@ -200,7 +259,7 @@ class Player:
         return self.get_info('Tm')
     
     def get_reports(self):
-        global positions
+        global positions,players_df
         #Querying Basketball Reference to get the Standard (Per Game) and Advanced tables
         req=requests.get(self.get_player_url()).text
         #Creating one big soup to house all tables
@@ -220,15 +279,21 @@ class Player:
             else:
                 standard_df[pos]=False
         
+        player_name=self.name
+        #Adding in player_status
+        player_status=self.get_status()
+        
         #Adding a Player Name column so the Standard and Advanced tables can be queried (thus using caching and eliminating need to query website again)
-        standard_df['Player Name']=self.name
+        standard_df['Player Name']=player_name
+        standard_df['Status']=player_status
         
         #Filtering the original soup for the Advanced data table  
         advanced_soup=orig_soup.find(id='div_advanced')
         advanced_table=advanced_soup.find_all('table')
         advanced_df = pd.read_html(str(advanced_table))[0]
         advanced_df[positions]=standard_df[positions]
-        advanced_df['Player Name']=self.name
+        advanced_df['Player Name']=player_name
+        advanced_df['Status']=player_status
         
         #Ensuring that all columns converted to numeric where possible in both Standard and Advanced tables
         standard_df=standard_df.apply(pd.to_numeric,errors='ignore')
@@ -273,7 +338,7 @@ class Player:
         return df[df['Player Name']==self.name]
         
     
-    def get_full_peer_group(self):
+    def get_full_peer_group(self,include_inactives):
         #Creating function to retrieve a base player's peer group to be used in the clustering analysis
         global formatted_player_queries_advances, positions
         player_age=self.get_age()
@@ -283,6 +348,10 @@ class Player:
         else:
             comparables_df=formatted_player_queries_advanced.copy()
         
+        #filtering comparables_df for include_inactives flag
+        if include_inactives==False:
+            comparables_df=comparables_df[comparables_df['Status']=='Active']
+            
         #Setting up a positions_array so that the comparables_df can be filtered for peers that shared any of the same positions as the base player (sum positions_array>0)
         positions_array=self.get_formatted_per_game('Advanced')[positions].iloc[0]
         positions_array=positions_array[positions_array== True].index
@@ -291,11 +360,11 @@ class Player:
 
         return players_array
     
-    def get_top_3_cluster(self):
+    def get_top_3_cluster(self,include_inactives):
         global ws_df
         #Creating a function to filter the full peer group to return up to 3 most similar players
         #Getting peer group using get_full_peer_group function
-        comparable_list=self.get_full_peer_group()
+        comparable_list=self.get_full_peer_group(include_inactives)
         #Copying the ws_df (Index: Player_name, Columns: Age, Rows: Win Shares)
         comparable_df=ws_df.copy()
         player_name=self.name
@@ -356,7 +425,7 @@ class Player:
         return top_3_neigh
 
 
-# In[21]:
+# In[8]:
 
 
 #Creating a team class to be used in returning active rosters in the dash player list dropdown
@@ -403,20 +472,8 @@ class Team():
         return rosters_df[rosters_df['Tm']==self.name]
 
 
-# In[25]:
+# In[48]:
 
 
-refresh_all()
-
-
-# In[24]:
-
-
-player_queries_standard
-
-
-# In[ ]:
-
-
-
+refresh_all(2023,1990)
 
