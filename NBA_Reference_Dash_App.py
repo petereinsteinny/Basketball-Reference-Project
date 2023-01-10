@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[103]:
+# In[202]:
 
 
 #importing packages
@@ -29,7 +29,7 @@ from sklearn.cluster import KMeans
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[161]:
+# In[203]:
 
 
 #Creating player class to inherit attributes and functions
@@ -290,7 +290,7 @@ class Player:
         return top_3_neigh
 
 
-# In[162]:
+# In[204]:
 
 
 rosters_df=[]
@@ -338,7 +338,7 @@ class Team():
         return rosters_df[rosters_df['Tm']==self.name]
 
 
-# In[170]:
+# In[205]:
 
 
 players_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Players.csv?raw=true')
@@ -350,7 +350,7 @@ formatted_player_queries_advanced=pd.read_csv('https://github.com/petereinsteinn
 rosters_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Rosters.csv?raw=true')
 
 
-# In[164]:
+# In[206]:
 
 
 #Dynamically retrieving the last season so the portion of regular season games played (82/n). This transforms the current season to date stats into a full-season value.
@@ -375,16 +375,10 @@ ws_df=ws_df.replace(np.nan,0)
 ws_df['Career']=ws_df.sum(axis=1)
 
 
-# In[115]:
-
-
-active_players=players_df.index.sort_values().unique().tolist()
-#Converting the unique_players list into the dropdown format to be used in Dash
-active_players_choices=[{'label':i, 'value':i} for i in active_players]
-
-all_players=sorted(formatted_player_queries_standard['Player Name'].unique())
-
-all_players_choices=[{'label':i, 'value':i} for i in all_players]
+#Creating unique list of active players
+unique_active_players=players_df.index.sort_values().unique().tolist()
+#Creating the Team dropdown list from active players for the Dash
+active_players_choices=[{'label':i, 'value':i} for i in unique_active_players]
 
 #Getting a list of unique teams from the players_df. Getting rid of 'TOT' as this indicates 'Total' as opposed to an individual team
 unique_teams=players_df[(players_df['Tm']!='TOT') & (players_df['Tm']!='Tm')]['Tm'].sort_values().unique().tolist()
@@ -403,10 +397,10 @@ advanced_cols=df.select_dtypes(include=np.number).drop('Age',axis=1).columns.to_
 
 
 #Wrote project description to be used in Dash
-project_description=project_description='The below dashboard uses the K-Means Clustering Machine Learning technique to return up to 3 comparable active NBA players on a Win Share (WS) by Age basis. These comparable players are sorted from most-to-least similar in the legend for each chart. Basketball Reference defines this metric as a "player statistic which attempts to divvy up credit for team success to the individuals on the team". For more information on this project, or to reach out to me with any questions, please refer to my:'
+project_description=project_description='The below dashboard uses the K-Means Clustering Machine Learning technique to return up to 3 comparable active or inactive (1990 on) NBA players on a Win Share (WS) by Age basis. These comparable players are sorted from most-to-least similar in the legend for each chart. Basketball Reference defines this metric as a "player statistic which attempts to divvy up credit for team success to the individuals on the team". For more information on this project, or to reach out to me with any questions, please refer to my:'
 
 
-# In[167]:
+# In[208]:
 
 
 #Creating dictionary to house player cluster outputs
@@ -480,8 +474,8 @@ app.layout = html.Div(children=[
                            'color': '#503D36',
                            'font-size': 20}),
             dcc.Dropdown(id='player-dropdown',
-                         options=[{'label':i, 'value':i} for i in unique_players],
-                         value=unique_players[0],
+                         options=active_players_choices,
+                         value=unique_active_players[0],
                          placeholder="Select a Player Here",
                          searchable=True),
         ],
@@ -554,8 +548,8 @@ app.layout = html.Div(children=[
 def get_player_options(team_value,player_value):
     #If the team_value is 'ALL', then the player dropdowns will include all players regardless of team
     if team_value=='ALL':
-        return all_players_choices, player_value
-    #Else, if a specific team is selected, then populate the player dropdown with all players in their active roster who have minutes this season (in unique_players)
+        return active_players_choices, player_value
+    #Else, if a specific team is selected, then populate the player dropdown with all players in their active roster who have minutes this season in active_players)
     else:
         this_team=Team(team_value).get_roster()
         roster=this_team['Player']
@@ -639,16 +633,4 @@ def get_stats(player_value,standard_stat_value,advanced_stat_value,inactive_togg
 # Run the app
 if __name__ == '__main__':
     app.run_server()
-
-
-# In[169]:
-
-
-daq.__version__
-
-
-# In[ ]:
-
-
-
 
