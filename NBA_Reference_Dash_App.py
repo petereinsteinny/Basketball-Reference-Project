@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[202]:
+# In[219]:
 
 
 #importing packages
@@ -28,7 +28,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 
 
-# In[203]:
+# In[220]:
 
 
 #Creating player class to inherit attributes and functions
@@ -289,7 +289,7 @@ class Player:
         return top_3_neigh
 
 
-# In[204]:
+# In[221]:
 
 
 rosters_df=[]
@@ -337,7 +337,7 @@ class Team():
         return rosters_df[rosters_df['Tm']==self.name]
 
 
-# In[205]:
+# In[222]:
 
 
 players_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Players.csv?raw=true')
@@ -349,7 +349,7 @@ formatted_player_queries_advanced=pd.read_csv('https://github.com/petereinsteinn
 rosters_df=pd.read_csv('https://github.com/petereinsteinny/Basketball-Reference-Project/blob/main/Active%20Rosters.csv?raw=true')
 
 
-# In[206]:
+# In[223]:
 
 
 #Dynamically retrieving the last season so the portion of regular season games played (82/n). This transforms the current season to date stats into a full-season value.
@@ -399,7 +399,7 @@ advanced_cols=df.select_dtypes(include=np.number).drop('Age',axis=1).columns.to_
 project_description=project_description='The below dashboard uses the K-Means Clustering Machine Learning technique to return up to 3 comparable active or inactive (1990 on) NBA players on a Win Share (WS) by Age basis. These comparable players are sorted from most-to-least similar in the legend for each chart. Basketball Reference defines this metric as a "player statistic which attempts to divvy up credit for team success to the individuals on the team". For more information on this project, or to reach out to me with any questions, please refer to my:'
 
 
-# In[208]:
+# In[226]:
 
 
 #Creating dictionary to house player cluster outputs
@@ -420,7 +420,7 @@ app.config.suppress_callback_exceptions = True
 app.layout = html.Div(children=[ 
     html.Div(children=[
         #Creating the header dropdown here
-        html.H1('NBA Performance Visualizer', 
+        html.H1('NBA Reference Performance Visualizer', 
             style={'textAlign': 'center',
                    'color': '#503D36',
                    'font-size': 26,
@@ -482,7 +482,7 @@ app.layout = html.Div(children=[
                         'display': 'inline-block'}),
         #Creating the Include Inactive Players Header and Dreopdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
         html.Div(children=[
-            html.H2('Inactive Players?', 
+            html.H2('Include Inactive Players?', 
                     style={'textAlign': 'center',
                            'color': '#503D36',
                            'font-size': 20}),
@@ -552,7 +552,7 @@ def get_player_options(team_value,player_value):
     else:
         this_team=Team(team_value).get_roster()
         roster=this_team['Player']
-        roster=roster[roster.isin(unique_players)==True]
+        roster=roster[roster.isin(unique_active_players)==True]
         roster=sorted(roster.to_list())
         choices=[{'label':i, 'value':i} for i in roster]
         #If the pre-selected player shares the same team you entered, retain the original player value
