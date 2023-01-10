@@ -420,36 +420,36 @@ app.config.suppress_callback_exceptions = True
 app.layout = html.Div(children=[ 
     html.Div(children=[
         #Creating the header dropdown here
-        html.H1('Basketball Reference Performance Visualizer', 
+        html.H1('NBA Performance Visualizer', 
             style={'textAlign': 'center',
                    'color': '#503D36',
-                   'font-size': 32,
+                   'font-size': 26,
                     'margin':5}),
         #Creating the subheader for my name
         html.H2('By Peter Einstein, CFA', 
             style={'textAlign': 'center',
                    'color': '#503D36',
-                   'font-size': 26,
+                   'font-size': 22,
                   'font-weight': 'normal',
                   'margin':15}),
         #Creating the project description subheader here
         html.H3(project_description,
                 style={'textAlign': 'left',
                    'color': '#503D36',
-                   'font-size': 20,
+                   'font-size': 18,
                   'font-weight': 'normal',
                       'margin':5}),
         #Creating GitHub Link
         html.A("GitHub Project Repository", href='https://github.com/petereinsteinny/Basketball-Reference-Project', target="_blank",
                 style={'textAlign': 'left',
                        'color':'blue',
-                   'font-size': 20}),
+                   'font-size': 18}),
         html.Br(),
         #Creating LinkedIn Link
         html.A("LinkedIn", href='https://www.linkedin.com/in/peter-einstein-cfa/', target="_blank",
                 style={'textAlign': 'left', 
                        'color':'blue',
-                   'font-size': 20}),
+                   'font-size': 18}),
         html.Br()
     ]),
     html.Div(children=[
