@@ -118,7 +118,7 @@ def refresh_rosters():
     global players_df, rosters_df
     
     #Getting a list of unique teams from the players_df. Getting rid of 'TOT' as this indicates 'Total' as opposed to an individual team
-    unique_teams=players_df[(players_df['Tm']!='TOT') & (players_df['Tm']!='Tm')]['Tm'].sort_values().unique().tolist()
+    unique_teams=players_df[(players_df['Tm']!='TOT') & (players_df['Tm']!='Tm') & (players_df['Status']=='Active')]['Tm'].sort_values().unique().tolist()
 
     for team in unique_teams:
         #Instantiating each Player so that their data can be generated and appended
