@@ -26,7 +26,6 @@ from dash import no_update
 import sklearn
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[203]:
