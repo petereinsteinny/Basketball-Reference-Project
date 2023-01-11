@@ -482,7 +482,7 @@ app.layout = html.Div(children=[
                         'display': 'inline-block'}),
         #Creating the Include Inactive Players Header and Dreopdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
         html.Div(children=[
-            html.H2('Include Inactive', 
+            html.H2('Include Inactive:', 
                     style={'textAlign': 'center',
                            'color': '#503D36',
                            'font-size': 20}),
