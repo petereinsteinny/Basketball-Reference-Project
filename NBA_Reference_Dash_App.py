@@ -252,7 +252,7 @@ class Player:
         Clus_dataSet = StandardScaler().fit_transform(X)
         
         #Instantiating the k_means model. 10 clusters was determined after using the elbow-method to find the point of declining marginal inertia
-        k_means = KMeans(init = "k-means++", n_clusters = 10, n_init = 20)
+        k_means = KMeans(init = "k-means++", n_clusters = 10, n_init = 15)
         #Fitting the k_means model
         k_means.fit(X)
         #Retrieving the labels from the k_means model and populating them into the comparable_df
