@@ -1,9 +1,9 @@
 ,No.,Player,Pos,Ht,Wt,Birth Date,Unnamed: 6,Exp,College,Tm,Link
 0,17.0,Onyeka Okongwu,C,6-8,235,"December 11, 2000",us,2,USC,ATL,https://www.basketball-reference.com/players/o/okongon01.html
 1,1.0,Jalen Johnson,SF,6-9,220,"December 18, 2001",us,1,Duke,ATL,https://www.basketball-reference.com/players/j/johnsja05.html
-2,11.0,Trae Young,PG,6-1,164,"September 19, 1998",us,4,Oklahoma,ATL,https://www.basketball-reference.com/players/y/youngtr01.html
-3,14.0,AJ Griffin,SF,6-6,222,"August 25, 2003",us,R,Duke,ATL,https://www.basketball-reference.com/players/g/griffaj01.html
-4,3.0,Aaron Holiday,PG,6-0,185,"September 30, 1996",us,4,UCLA,ATL,https://www.basketball-reference.com/players/h/holidaa01.html
+2,14.0,AJ Griffin,SF,6-6,222,"August 25, 2003",us,R,Duke,ATL,https://www.basketball-reference.com/players/g/griffaj01.html
+3,3.0,Aaron Holiday,PG,6-0,185,"September 30, 1996",us,4,UCLA,ATL,https://www.basketball-reference.com/players/h/holidaa01.html
+4,11.0,Trae Young,PG,6-1,164,"September 19, 1998",us,4,Oklahoma,ATL,https://www.basketball-reference.com/players/y/youngtr01.html
 5,5.0,Dejounte Murray,SG,6-4,180,"September 19, 1996",us,5,Washington,ATL,https://www.basketball-reference.com/players/m/murrade01.html
 6,12.0,De'Andre Hunter,SF,6-8,225,"December 2, 1997",us,3,Virginia,ATL,https://www.basketball-reference.com/players/h/huntede01.html
 7,20.0,John Collins,PF,6-9,235,"September 23, 1997",us,5,Wake Forest,ATL,https://www.basketball-reference.com/players/c/collijo01.html
@@ -20,13 +20,13 @@
 2,12.0,Grant Williams,PF,6-6,236,"November 30, 1998",us,3,Tennessee,BOS,https://www.basketball-reference.com/players/w/willigr01.html
 3,0.0,Jayson Tatum,PF,6-8,210,"March 3, 1998",us,5,Duke,BOS,https://www.basketball-reference.com/players/t/tatumja01.html
 4,7.0,Jaylen Brown,SF,6-6,223,"October 24, 1996",us,6,California,BOS,https://www.basketball-reference.com/players/b/brownja02.html
-5,36.0,Marcus Smart,PG,6-3,220,"March 6, 1994",us,8,Oklahoma State,BOS,https://www.basketball-reference.com/players/s/smartma01.html
-6,13.0,Malcolm Brogdon,PG,6-5,229,"December 11, 1992",us,6,Virginia,BOS,https://www.basketball-reference.com/players/b/brogdma01.html
+5,13.0,Malcolm Brogdon,PG,6-5,229,"December 11, 1992",us,6,Virginia,BOS,https://www.basketball-reference.com/players/b/brogdma01.html
+6,36.0,Marcus Smart,PG,6-3,220,"March 6, 1994",us,8,Oklahoma State,BOS,https://www.basketball-reference.com/players/s/smartma01.html
 7,40.0,Luke Kornet,C,7-2,250,"July 15, 1995",us,5,Vanderbilt,BOS,https://www.basketball-reference.com/players/k/kornelu01.html
 8,42.0,Al Horford,C,6-9,240,"June 3, 1986",do,15,Florida,BOS,https://www.basketball-reference.com/players/h/horfoal01.html
 9,11.0,Payton Pritchard,PG,6-1,195,"January 28, 1998",us,2,Oregon,BOS,https://www.basketball-reference.com/players/p/pritcpa01.html
-10,91.0,Blake Griffin,PF,6-9,250,"March 16, 1989",us,12,Oklahoma,BOS,https://www.basketball-reference.com/players/g/griffbl01.html
-11,43.0,Justin Jackson,SF,6-8,220,"March 28, 1995",us,5,UNC,BOS,https://www.basketball-reference.com/players/j/jacksju01.html
+10,43.0,Justin Jackson,SF,6-8,220,"March 28, 1995",us,5,UNC,BOS,https://www.basketball-reference.com/players/j/jacksju01.html
+11,91.0,Blake Griffin,PF,6-9,250,"March 16, 1989",us,12,Oklahoma,BOS,https://www.basketball-reference.com/players/g/griffbl01.html
 12,44.0,Robert Williams,C,6-9,237,"October 17, 1997",us,4,Texas A&M,BOS,https://www.basketball-reference.com/players/w/williro04.html
 13,20.0,JD Davison,PG,6-3,195,"October 3, 2002",us,R,Alabama,BOS,https://www.basketball-reference.com/players/d/davisjd01.html
 14,28.0,Mfiondu Kabengele,PF,6-9,250,"August 14, 1997",ca,2,Florida State,BOS,https://www.basketball-reference.com/players/k/kabenmf01.html
@@ -48,9 +48,9 @@
 14,6.0,David Duke Jr.,SG,6-5,205,"October 13, 1999",us,1,Providence,BRK,https://www.basketball-reference.com/players/d/dukeda01.html
 15,14.0,Kessler Edwards,SF,6-8,215,"August 9, 2000",us,1,Pepperdine,BRK,https://www.basketball-reference.com/players/e/edwarke02.html
 16,31.0,Alondes Williams,SG,6-5,210,"June 19, 1999",us,R,"Triton College, Oklahoma, Wake Forest",BRK,https://www.basketball-reference.com/players/w/willial06.html
-0,11.0,DeMar DeRozan,SF,6-6,220,"August 7, 1989",us,13,USC,CHI,https://www.basketball-reference.com/players/d/derozde01.html
-1,9.0,Nikola Vučević,C,6-10,260,"October 24, 1990",ch,11,USC,CHI,https://www.basketball-reference.com/players/v/vucevni01.html
-2,44.0,Patrick Williams,PF,6-7,215,"August 26, 2001",us,2,Florida State,CHI,https://www.basketball-reference.com/players/w/willipa01.html
+0,9.0,Nikola Vučević,C,6-10,260,"October 24, 1990",ch,11,USC,CHI,https://www.basketball-reference.com/players/v/vucevni01.html
+1,44.0,Patrick Williams,PF,6-7,215,"August 26, 2001",us,2,Florida State,CHI,https://www.basketball-reference.com/players/w/willipa01.html
+2,11.0,DeMar DeRozan,SF,6-6,220,"August 7, 1989",us,13,USC,CHI,https://www.basketball-reference.com/players/d/derozde01.html
 3,12.0,Ayo Dosunmu,PG,6-5,200,"January 17, 2000",us,1,Illinois,CHI,https://www.basketball-reference.com/players/d/dosunay01.html
 4,7.0,Goran Dragić,PG,6-3,190,"May 6, 1986",si,14,,CHI,https://www.basketball-reference.com/players/d/dragigo01.html
 5,8.0,Zach LaVine,SG,6-5,200,"March 10, 1995",us,8,UCLA,CHI,https://www.basketball-reference.com/players/l/lavinza01.html
@@ -105,9 +105,9 @@
 6,10.0,Dorian Finney-Smith,PF,6-7,220,"May 4, 1993",us,6,Florida,DAL,https://www.basketball-reference.com/players/f/finnedo01.html
 7,0.0,JaVale McGee,C,7-0,270,"January 19, 1988",us,14,Nevada,DAL,https://www.basketball-reference.com/players/m/mcgeeja01.html
 8,8.0,Josh Green,SG,6-5,200,"November 16, 2000",au,2,Arizona,DAL,https://www.basketball-reference.com/players/g/greenjo02.html
-9,42.0,Maxi Kleber,C,6-10,240,"January 29, 1992",de,5,,DAL,https://www.basketball-reference.com/players/k/klebima01.html
-10,44.0,Dāvis Bertāns,PF,6-10,225,"November 12, 1992",lv,6,,DAL,https://www.basketball-reference.com/players/b/bertada01.html
-11,21.0,Frank Ntilikina,PG,6-4,200,"July 28, 1998",be,5,,DAL,https://www.basketball-reference.com/players/n/ntilila01.html
+9,44.0,Dāvis Bertāns,PF,6-10,225,"November 12, 1992",lv,6,,DAL,https://www.basketball-reference.com/players/b/bertada01.html
+10,21.0,Frank Ntilikina,PG,6-4,200,"July 28, 1998",be,5,,DAL,https://www.basketball-reference.com/players/n/ntilila01.html
+11,42.0,Maxi Kleber,C,6-10,240,"January 29, 1992",de,5,,DAL,https://www.basketball-reference.com/players/k/klebima01.html
 12,1.0,Theo Pinson,SG,6-5,212,"November 5, 1995",us,4,UNC,DAL,https://www.basketball-reference.com/players/p/pinsoth01.html
 13,3.0,Jaden Hardy,SG,6-4,198,"July 5, 2002",us,R,,DAL,https://www.basketball-reference.com/players/h/hardyja02.html
 14,23.0,McKinley Wright IV,PG,6-0,196,"October 25, 1998",us,1,Colorado,DAL,https://www.basketball-reference.com/players/w/wrighmc01.html
@@ -134,18 +134,18 @@
 2,23.0,Jaden Ivey,SG,6-4,195,"February 13, 2002",us,R,Purdue,DET,https://www.basketball-reference.com/players/i/iveyja01.html
 3,41.0,Saddiq Bey,SF,6-7,215,"April 9, 1999",us,2,Villanova,DET,https://www.basketball-reference.com/players/b/beysa01.html
 4,0.0,Jalen Duren,C,6-10,250,"November 18, 2003",us,R,Memphis,DET,https://www.basketball-reference.com/players/d/durenja01.html
-5,28.0,Isaiah Stewart,C,6-8,250,"May 22, 2001",us,2,Washington,DET,https://www.basketball-reference.com/players/s/stewais01.html
-6,6.0,Hamidou Diallo,SG,6-5,202,"July 31, 1998",us,4,Kentucky,DET,https://www.basketball-reference.com/players/d/diallha01.html
-7,18.0,Cory Joseph,PG,6-3,200,"August 20, 1991",ca,11,Texas,DET,https://www.basketball-reference.com/players/j/josepco01.html
-8,20.0,Kevin Knox,SF,6-7,215,"August 11, 1999",us,4,Kentucky,DET,https://www.basketball-reference.com/players/k/knoxke01.html
+5,6.0,Hamidou Diallo,SG,6-5,202,"July 31, 1998",us,4,Kentucky,DET,https://www.basketball-reference.com/players/d/diallha01.html
+6,28.0,Isaiah Stewart,C,6-8,250,"May 22, 2001",us,2,Washington,DET,https://www.basketball-reference.com/players/s/stewais01.html
+7,20.0,Kevin Knox,SF,6-7,215,"August 11, 1999",us,4,Kentucky,DET,https://www.basketball-reference.com/players/k/knoxke01.html
+8,18.0,Cory Joseph,PG,6-3,200,"August 20, 1991",ca,11,Texas,DET,https://www.basketball-reference.com/players/j/josepco01.html
 9,5.0,Alec Burks,SG,6-6,214,"July 20, 1991",us,11,Colorado,DET,https://www.basketball-reference.com/players/b/burksal01.html
 10,35.0,Marvin Bagley III,PF,6-11,235,"March 14, 1999",us,4,Duke,DET,https://www.basketball-reference.com/players/b/baglema01.html
 11,12.0,Isaiah Livers,PF,6-7,230,"July 28, 1998",us,1,Michigan,DET,https://www.basketball-reference.com/players/l/liveris01.html
 12,17.0,Rodney McGruder,SG,6-4,205,"July 29, 1991",us,6,Kansas State,DET,https://www.basketball-reference.com/players/m/mcgruro01.html
 13,2.0,Cade Cunningham,PG,6-6,220,"September 25, 2001",us,1,Oklahoma State,DET,https://www.basketball-reference.com/players/c/cunnica01.html
 14,9.0,Nerlens Noel,C,6-11,220,"April 10, 1994",us,8,Kentucky,DET,https://www.basketball-reference.com/players/n/noelne01.html
-15,27.0,Buddy Boeheim,PG,6-6,205,"November 11, 1999",us,R,Syracuse,DET,https://www.basketball-reference.com/players/b/boehebu01.html
-16,,Jared Rhoden,G,6-6,210,"August 27, 1999",us,R,Seton Hall,DET,https://www.basketball-reference.com/players/r/rhodeja01.html
+15,8.0,Jared Rhoden,G,6-6,210,"August 27, 1999",us,R,Seton Hall,DET,https://www.basketball-reference.com/players/r/rhodeja01.html
+16,27.0,Buddy Boeheim,PG,6-6,205,"November 11, 1999",us,R,Syracuse,DET,https://www.basketball-reference.com/players/b/boehebu01.html
 0,3.0,Jordan Poole,SG,6-4,194,"June 19, 1999",us,3,Michigan,GSW,https://www.basketball-reference.com/players/p/poolejo01.html
 1,5.0,Kevon Looney,C,6-9,222,"February 6, 1996",us,7,UCLA,GSW,https://www.basketball-reference.com/players/l/looneke01.html
 2,23.0,Draymond Green,PF,6-6,230,"March 4, 1990",us,10,Michigan State,GSW,https://www.basketball-reference.com/players/g/greendr01.html
@@ -184,8 +184,8 @@
 2,0.0,Tyrese Haliburton,PG,6-5,185,"February 29, 2000",us,2,Iowa State,IND,https://www.basketball-reference.com/players/h/halibty01.html
 3,25.0,Jalen Smith,PF,6-10,215,"March 16, 2000",us,2,Maryland,IND,https://www.basketball-reference.com/players/s/smithja04.html
 4,9.0,T.J. McConnell,PG,6-1,190,"March 25, 1992",us,7,"Duquesne, Arizona",IND,https://www.basketball-reference.com/players/m/mccontj01.html
-5,23.0,Aaron Nesmith,SF,6-5,215,"October 16, 1999",us,2,Vanderbilt,IND,https://www.basketball-reference.com/players/n/nesmiaa01.html
-6,2.0,Andrew Nembhard,SG,6-5,193,"January 16, 2000",ca,R,"Florida, Gonzaga",IND,https://www.basketball-reference.com/players/n/nembhan01.html
+5,2.0,Andrew Nembhard,SG,6-5,193,"January 16, 2000",ca,R,"Florida, Gonzaga",IND,https://www.basketball-reference.com/players/n/nembhan01.html
+6,23.0,Aaron Nesmith,SF,6-5,215,"October 16, 1999",us,2,Vanderbilt,IND,https://www.basketball-reference.com/players/n/nesmiaa01.html
 7,12.0,Oshae Brissett,SF,6-7,210,"June 20, 1998",ca,3,Syracuse,IND,https://www.basketball-reference.com/players/b/brissos01.html
 8,33.0,Myles Turner,C,6-11,250,"March 24, 1996",us,7,Texas,IND,https://www.basketball-reference.com/players/t/turnemy01.html
 9,22.0,Isaiah Jackson,PF,6-10,206,"January 10, 2002",us,1,Kentucky,IND,https://www.basketball-reference.com/players/j/jacksis01.html
@@ -199,14 +199,14 @@
 0,14.0,Terance Mann,SG,6-5,215,"October 18, 1996",us,3,Florida State,LAC,https://www.basketball-reference.com/players/m/mannte01.html
 1,40.0,Ivica Zubac,C,7-0,240,"March 18, 1997",ba,6,,LAC,https://www.basketball-reference.com/players/z/zubaciv01.html
 2,8.0,Marcus Morris,PF,6-8,218,"September 2, 1989",us,11,Kansas,LAC,https://www.basketball-reference.com/players/m/morrima03.html
-3,1.0,Reggie Jackson,PG,6-2,208,"April 16, 1990",it,11,Boston College,LAC,https://www.basketball-reference.com/players/j/jacksre01.html
-4,33.0,Nicolas Batum,PF,6-8,230,"December 14, 1988",fr,14,,LAC,https://www.basketball-reference.com/players/b/batumni01.html
+3,33.0,Nicolas Batum,PF,6-8,230,"December 14, 1988",fr,14,,LAC,https://www.basketball-reference.com/players/b/batumni01.html
+4,1.0,Reggie Jackson,PG,6-2,208,"April 16, 1990",it,11,Boston College,LAC,https://www.basketball-reference.com/players/j/jacksre01.html
 5,24.0,Norman Powell,SG,6-3,215,"May 25, 1993",us,7,UCLA,LAC,https://www.basketball-reference.com/players/p/powelno01.html
 6,11.0,John Wall,PG,6-3,210,"September 6, 1990",us,10,Kentucky,LAC,https://www.basketball-reference.com/players/w/walljo01.html
 7,7.0,Amir Coffey,SG,6-7,210,"June 17, 1997",us,3,Minnesota,LAC,https://www.basketball-reference.com/players/c/coffeam01.html
 8,13.0,Paul George,SF,6-8,220,"May 2, 1990",us,12,Fresno State,LAC,https://www.basketball-reference.com/players/g/georgpa01.html
-9,5.0,Luke Kennard,SG,6-5,206,"June 24, 1996",us,5,Duke,LAC,https://www.basketball-reference.com/players/k/kennalu01.html
-10,9.0,Moses Brown,C,7-2,245,"October 13, 1999",us,3,UCLA,LAC,https://www.basketball-reference.com/players/b/brownmo01.html
+9,9.0,Moses Brown,C,7-2,245,"October 13, 1999",us,3,UCLA,LAC,https://www.basketball-reference.com/players/b/brownmo01.html
+10,5.0,Luke Kennard,SG,6-5,206,"June 24, 1996",us,5,Duke,LAC,https://www.basketball-reference.com/players/k/kennalu01.html
 11,23.0,Robert Covington,PF,6-7,209,"December 14, 1990",us,9,Tennessee State,LAC,https://www.basketball-reference.com/players/c/covinro01.html
 12,2.0,Kawhi Leonard,SF,6-7,225,"June 29, 1991",us,10,San Diego State,LAC,https://www.basketball-reference.com/players/l/leonaka01.html
 13,4.0,Brandon Boston Jr.,SG,6-7,185,"November 28, 2001",us,1,Kentucky,LAC,https://www.basketball-reference.com/players/b/bostobr01.html
@@ -233,8 +233,8 @@
 1,46.0,John Konchar,SG,6-5,210,"March 22, 1996",us,3,Purdue-Fort Wayne,MEM,https://www.basketball-reference.com/players/k/konchjo01.html
 2,24.0,Dillon Brooks,SG,6-7,225,"January 22, 1996",ca,5,Oregon,MEM,https://www.basketball-reference.com/players/b/brookdi01.html
 3,7.0,Santi Aldama,PF,6-11,224,"January 10, 2001",es,1,Loyola (MD),MEM,https://www.basketball-reference.com/players/a/aldamsa01.html
-4,27.0,David Roddy,PF,6-6,255,"March 27, 2001",us,R,Colorado State,MEM,https://www.basketball-reference.com/players/r/roddyda01.html
-5,4.0,Steven Adams,C,6-11,265,"July 20, 1993",nz,9,Pitt,MEM,https://www.basketball-reference.com/players/a/adamsst01.html
+4,4.0,Steven Adams,C,6-11,265,"July 20, 1993",nz,9,Pitt,MEM,https://www.basketball-reference.com/players/a/adamsst01.html
+5,27.0,David Roddy,PF,6-6,255,"March 27, 2001",us,R,Colorado State,MEM,https://www.basketball-reference.com/players/r/roddyda01.html
 6,15.0,Brandon Clarke,PF,6-8,215,"September 19, 1996",ca,3,"San Jose State, Gonzaga",MEM,https://www.basketball-reference.com/players/c/clarkbr01.html
 7,12.0,Ja Morant,PG,6-3,174,"August 10, 1999",us,3,Murray State,MEM,https://www.basketball-reference.com/players/m/moranja01.html
 8,13.0,Jaren Jackson Jr.,C,6-11,242,"September 15, 1999",us,4,Michigan State,MEM,https://www.basketball-reference.com/players/j/jacksja02.html
@@ -251,11 +251,11 @@
 2,7.0,Kyle Lowry,PG,6-0,196,"March 25, 1986",us,16,Villanova,MIA,https://www.basketball-reference.com/players/l/lowryky01.html
 3,16.0,Caleb Martin,PF,6-5,205,"September 28, 1995",us,3,"NC State, Nevada",MIA,https://www.basketball-reference.com/players/m/martica02.html
 4,14.0,Tyler Herro,SG,6-5,195,"January 20, 2000",us,3,Kentucky,MIA,https://www.basketball-reference.com/players/h/herroty01.html
-5,55.0,Duncan Robinson,SF,6-7,215,"April 22, 1994",us,4,"Williams, Michigan",MIA,https://www.basketball-reference.com/players/r/robindu01.html
-6,21.0,Dewayne Dedmon,C,7-0,245,"August 12, 1989",us,9,USC,MIA,https://www.basketball-reference.com/players/d/dedmode01.html
-7,24.0,Haywood Highsmith,SF,6-7,220,"December 9, 1996",us,2,Wheeling University,MIA,https://www.basketball-reference.com/players/h/highsha01.html
-8,22.0,Jimmy Butler,SF,6-7,230,"September 14, 1989",us,11,Marquette,MIA,https://www.basketball-reference.com/players/b/butleji01.html
-9,2.0,Gabe Vincent,PG,6-3,200,"June 14, 1996",us,3,UC Santa Barbara,MIA,https://www.basketball-reference.com/players/v/vincega01.html
+5,21.0,Dewayne Dedmon,C,7-0,245,"August 12, 1989",us,9,USC,MIA,https://www.basketball-reference.com/players/d/dedmode01.html
+6,24.0,Haywood Highsmith,SF,6-7,220,"December 9, 1996",us,2,Wheeling University,MIA,https://www.basketball-reference.com/players/h/highsha01.html
+7,22.0,Jimmy Butler,SF,6-7,230,"September 14, 1989",us,11,Marquette,MIA,https://www.basketball-reference.com/players/b/butleji01.html
+8,2.0,Gabe Vincent,PG,6-3,200,"June 14, 1996",us,3,UC Santa Barbara,MIA,https://www.basketball-reference.com/players/v/vincega01.html
+9,55.0,Duncan Robinson,SF,6-7,215,"April 22, 1994",us,4,"Williams, Michigan",MIA,https://www.basketball-reference.com/players/r/robindu01.html
 10,4.0,Victor Oladipo,SG,6-4,213,"May 4, 1992",us,9,Indiana,MIA,https://www.basketball-reference.com/players/o/oladivi01.html
 11,5.0,Nikola Jović,PF,6-10,209,"June 9, 2003",gb,R,,MIA,https://www.basketball-reference.com/players/j/jovicni01.html
 12,25.0,Orlando Robinson,C,7-0,235,"July 10, 2000",us,R,Fresno State,MIA,https://www.basketball-reference.com/players/r/robinor01.html
@@ -285,16 +285,16 @@
 3,3.0,Jaden McDaniels,PF,6-9,185,"September 29, 2000",us,2,Washington,MIN,https://www.basketball-reference.com/players/m/mcdanja02.html
 4,27.0,Rudy Gobert,C,7-1,258,"June 26, 1992",fr,9,,MIN,https://www.basketball-reference.com/players/g/goberru01.html
 5,11.0,Naz Reid,C,6-9,264,"August 26, 1999",us,3,LSU,MIN,https://www.basketball-reference.com/players/r/reidna01.html
-6,5.0,Kyle Anderson,PF,6-9,230,"September 20, 1993",us,8,UCLA,MIN,https://www.basketball-reference.com/players/a/anderky01.html
-7,25.0,Austin Rivers,SG,6-4,200,"August 1, 1992",us,10,Duke,MIN,https://www.basketball-reference.com/players/r/riverau01.html
-8,32.0,Karl-Anthony Towns,PF,6-11,248,"November 15, 1995",us,7,Kentucky,MIN,https://www.basketball-reference.com/players/t/townska01.html
-9,12.0,Taurean Prince,SF,6-7,218,"March 22, 1994",us,6,Baylor,MIN,https://www.basketball-reference.com/players/p/princta02.html
-10,10.0,Bryn Forbes,SG,6-2,205,"July 23, 1993",us,6,Michigan State,MIN,https://www.basketball-reference.com/players/f/forbebr01.html
+6,25.0,Austin Rivers,SG,6-4,200,"August 1, 1992",us,10,Duke,MIN,https://www.basketball-reference.com/players/r/riverau01.html
+7,5.0,Kyle Anderson,PF,6-9,230,"September 20, 1993",us,8,UCLA,MIN,https://www.basketball-reference.com/players/a/anderky01.html
+8,12.0,Taurean Prince,SF,6-7,218,"March 22, 1994",us,6,Baylor,MIN,https://www.basketball-reference.com/players/p/princta02.html
+9,10.0,Bryn Forbes,SG,6-2,205,"July 23, 1993",us,6,Michigan State,MIN,https://www.basketball-reference.com/players/f/forbebr01.html
+10,32.0,Karl-Anthony Towns,PF,6-11,248,"November 15, 1995",us,7,Kentucky,MIN,https://www.basketball-reference.com/players/t/townska01.html
 11,13.0,Nathan Knight,PF,6-10,253,"September 20, 1997",us,2,William & Mary,MIN,https://www.basketball-reference.com/players/k/knighna01.html
 12,6.0,Jordan McLaughlin,PG,5-11,185,"April 9, 1996",us,3,USC,MIN,https://www.basketball-reference.com/players/m/mclaujo01.html
 13,7.0,Wendell Moore Jr.,SG,6-5,213,"September 18, 2001",us,R,Duke,MIN,https://www.basketball-reference.com/players/m/moorewe01.html
-14,55.0,Luka Garza,C,6-11,235,"December 27, 1998",us,1,Iowa,MIN,https://www.basketball-reference.com/players/g/garzalu01.html
-15,37.0,Matt Ryan,SF,6-7,215,"April 17, 1997",us,1,"Notre Dame, Vanderbilt, Chattanooga",MIN,https://www.basketball-reference.com/players/r/ryanma01.html
+14,37.0,Matt Ryan,SF,6-7,215,"April 17, 1997",us,1,"Notre Dame, Vanderbilt, Chattanooga",MIN,https://www.basketball-reference.com/players/r/ryanma01.html
+15,55.0,Luka Garza,C,6-11,235,"December 27, 1998",us,1,Iowa,MIN,https://www.basketball-reference.com/players/g/garzalu01.html
 16,8.0,Josh Minott,SF,6-8,205,"November 25, 2002",us,R,Memphis,MIN,https://www.basketball-reference.com/players/m/minotjo01.html
 0,17.0,Jonas Valančiūnas,C,6-11,265,"May 6, 1992",lt,10,,NOP,https://www.basketball-reference.com/players/v/valanjo01.html
 1,4.0,Devonte' Graham,PG,6-1,195,"February 22, 1995",us,4,Kansas,NOP,https://www.basketball-reference.com/players/g/grahade01.html
@@ -306,12 +306,12 @@
 7,22.0,Larry Nance Jr.,PF,6-7,245,"January 1, 1993",us,7,Wyoming,NOP,https://www.basketball-reference.com/players/n/nancela02.html
 8,1.0,Zion Williamson,PF,6-6,284,"July 6, 2000",us,2,Duke,NOP,https://www.basketball-reference.com/players/w/willizi01.html
 9,5.0,Herbert Jones,SF,6-8,210,"October 6, 1998",us,1,Alabama,NOP,https://www.basketball-reference.com/players/j/joneshe01.html
-10,9.0,Willy Hernangómez,C,6-11,250,"May 27, 1994",es,6,,NOP,https://www.basketball-reference.com/players/h/hernawi01.html
-11,10.0,Jaxson Hayes,C,6-11,220,"May 23, 2000",us,3,Texas,NOP,https://www.basketball-reference.com/players/h/hayesja02.html
+10,10.0,Jaxson Hayes,C,6-11,220,"May 23, 2000",us,3,Texas,NOP,https://www.basketball-reference.com/players/h/hayesja02.html
+11,9.0,Willy Hernangómez,C,6-11,250,"May 27, 1994",es,6,,NOP,https://www.basketball-reference.com/players/h/hernawi01.html
 12,14.0,Brandon Ingram,SF,6-8,190,"September 2, 1997",us,6,Duke,NOP,https://www.basketball-reference.com/players/i/ingrabr01.html
 13,41.0,Garrett Temple,SG,6-5,195,"May 8, 1986",us,12,LSU,NOP,https://www.basketball-reference.com/players/t/templga01.html
 14,13.0,Kira Lewis Jr.,PG,6-1,170,"April 6, 2001",us,2,Alabama,NOP,https://www.basketball-reference.com/players/l/lewiski01.html
-15,0.0,Dereon Seabron,SG,6-7,180,"May 26, 2000",us,R,,NOP,https://www.basketball-reference.com/players/s/seabrde01.html
+15,0.0,Dereon Seabron,SG,6-7,180,"May 26, 2000",us,R,NC State,NOP,https://www.basketball-reference.com/players/s/seabrde01.html
 16,,E.J. Liddell,PF,6-7,240,"December 18, 2000",us,R,Ohio State,NOP,https://www.basketball-reference.com/players/l/liddeej01.html
 0,30.0,Julius Randle,PF,6-8,250,"November 29, 1994",us,8,Kentucky,NYK,https://www.basketball-reference.com/players/r/randlju01.html
 1,5.0,Immanuel Quickley,PG,6-3,190,"June 17, 1999",us,2,Kentucky,NYK,https://www.basketball-reference.com/players/q/quickim01.html
@@ -337,8 +337,8 @@
 4,23.0,Tre Mann,PG,6-3,178,"February 3, 2001",us,1,Florida,OKC,https://www.basketball-reference.com/players/m/manntr01.html
 5,11.0,Isaiah Joe,SG,6-4,165,"July 2, 1999",us,2,Arkansas,OKC,https://www.basketball-reference.com/players/j/joeis01.html
 6,34.0,Kenrich Williams,PF,6-6,210,"December 2, 1994",us,4,TCU,OKC,https://www.basketball-reference.com/players/w/willike04.html
-7,17.0,Aleksej Pokusevski,PF,7-0,190,"December 26, 2001",rs,2,,OKC,https://www.basketball-reference.com/players/p/pokusal01.html
-8,21.0,Aaron Wiggins,SG,6-6,200,"January 2, 1999",us,1,Maryland,OKC,https://www.basketball-reference.com/players/w/wiggiaa01.html
+7,21.0,Aaron Wiggins,SG,6-6,200,"January 2, 1999",us,1,Maryland,OKC,https://www.basketball-reference.com/players/w/wiggiaa01.html
+8,17.0,Aleksej Pokusevski,PF,7-0,190,"December 26, 2001",rs,2,,OKC,https://www.basketball-reference.com/players/p/pokusal01.html
 9,33.0,Mike Muscala,C,6-10,240,"July 1, 1991",us,9,Bucknell,OKC,https://www.basketball-reference.com/players/m/muscami01.html
 10,50.0,Jeremiah Robinson-Earl,PF,6-9,230,"November 3, 2000",us,1,Villanova,OKC,https://www.basketball-reference.com/players/r/robinje02.html
 11,55.0,Darius Bazley,PF,6-8,208,"June 12, 2000",us,3,,OKC,https://www.basketball-reference.com/players/b/bazleda01.html
@@ -347,8 +347,8 @@
 14,6.0,Jaylin Williams,PF,6-10,240,"June 29, 2002",us,R,Arkansas,OKC,https://www.basketball-reference.com/players/w/willija07.html
 15,,Chet Holmgren,PF,7-0,195,"May 1, 2002",us,R,Gonzaga,OKC,https://www.basketball-reference.com/players/h/holmgch01.html
 0,22.0,Franz Wagner,SF,6-9,225,"August 27, 2001",de,1,Michigan,ORL,https://www.basketball-reference.com/players/w/wagnefr01.html
-1,10.0,Bol Bol,PF,7-2,220,"November 16, 1999",sd,3,Oregon,ORL,https://www.basketball-reference.com/players/b/bolbo01.html
-2,31.0,Terrence Ross,SG,6-6,206,"February 5, 1991",us,10,Washington,ORL,https://www.basketball-reference.com/players/r/rosste01.html
+1,31.0,Terrence Ross,SG,6-6,206,"February 5, 1991",us,10,Washington,ORL,https://www.basketball-reference.com/players/r/rosste01.html
+2,10.0,Bol Bol,PF,7-2,220,"November 16, 1999",sd,3,Oregon,ORL,https://www.basketball-reference.com/players/b/bolbo01.html
 3,5.0,Paolo Banchero,PF,6-10,250,"November 12, 2002",us,R,Duke,ORL,https://www.basketball-reference.com/players/b/banchpa01.html
 4,11.0,Mo Bamba,C,7-0,231,"May 12, 1998",us,4,Texas,ORL,https://www.basketball-reference.com/players/b/bambamo01.html
 5,2.0,Caleb Houstan,SF,6-8,205,"January 9, 2003",ca,R,Michigan,ORL,https://www.basketball-reference.com/players/h/houstca01.html
@@ -357,10 +357,10 @@
 8,25.0,Admiral Schofield,PF,6-5,241,"March 30, 1997",gb,2,Tennessee,ORL,https://www.basketball-reference.com/players/s/schofad01.html
 9,50.0,Cole Anthony,PG,6-2,185,"May 15, 2000",us,2,UNC,ORL,https://www.basketball-reference.com/players/a/anthoco01.html
 10,34.0,Wendell Carter Jr.,C,6-10,270,"April 16, 1999",us,4,Duke,ORL,https://www.basketball-reference.com/players/c/cartewe01.html
-11,21.0,Moritz Wagner,C,6-11,245,"April 26, 1997",de,4,Michigan,ORL,https://www.basketball-reference.com/players/w/wagnemo01.html
-12,20.0,Markelle Fultz,SG,6-3,209,"May 29, 1998",us,5,Washington,ORL,https://www.basketball-reference.com/players/f/fultzma01.html
-13,3.0,Chuma Okeke,PF,6-6,229,"August 18, 1998",us,2,Auburn,ORL,https://www.basketball-reference.com/players/o/okekech01.html
-14,4.0,Jalen Suggs,PG,6-4,205,"June 3, 2001",us,1,Gonzaga,ORL,https://www.basketball-reference.com/players/s/suggsja01.html
+11,20.0,Markelle Fultz,SG,6-3,209,"May 29, 1998",us,5,Washington,ORL,https://www.basketball-reference.com/players/f/fultzma01.html
+12,21.0,Moritz Wagner,C,6-11,245,"April 26, 1997",de,4,Michigan,ORL,https://www.basketball-reference.com/players/w/wagnemo01.html
+13,4.0,Jalen Suggs,PG,6-4,205,"June 3, 2001",us,1,Gonzaga,ORL,https://www.basketball-reference.com/players/s/suggsja01.html
+14,3.0,Chuma Okeke,PF,6-6,229,"August 18, 1998",us,2,Auburn,ORL,https://www.basketball-reference.com/players/o/okekech01.html
 15,14.0,Gary Harris,SG,6-4,210,"September 14, 1994",us,8,Michigan State,ORL,https://www.basketball-reference.com/players/h/harriga01.html
 16,,Jonathan Isaac,PF,6-11,230,"October 3, 1997",us,3,Florida State,ORL,https://www.basketball-reference.com/players/i/isaacjo01.html
 0,20.0,Georges Niang,PF,6-7,230,"June 17, 1993",us,6,Iowa State,PHI,https://www.basketball-reference.com/players/n/niangge01.html
@@ -402,8 +402,8 @@
 4,24.0,Drew Eubanks,C,6-9,245,"February 1, 1997",us,4,Oregon State,POR,https://www.basketball-reference.com/players/e/eubandr01.html
 5,27.0,Jusuf Nurkić,C,6-11,290,"August 23, 1994",ba,8,,POR,https://www.basketball-reference.com/players/n/nurkiju01.html
 6,26.0,Justise Winslow,SF,6-6,222,"March 26, 1996",us,7,Duke,POR,https://www.basketball-reference.com/players/w/winslju01.html
-7,2.0,Trendon Watford,PF,6-9,240,"November 9, 2000",us,1,LSU,POR,https://www.basketball-reference.com/players/w/watfotr01.html
-8,0.0,Damian Lillard,PG,6-2,195,"July 15, 1990",us,10,Weber State,POR,https://www.basketball-reference.com/players/l/lillada01.html
+7,0.0,Damian Lillard,PG,6-2,195,"July 15, 1990",us,10,Weber State,POR,https://www.basketball-reference.com/players/l/lillada01.html
+8,2.0,Trendon Watford,PF,6-9,240,"November 9, 2000",us,1,LSU,POR,https://www.basketball-reference.com/players/w/watfotr01.html
 9,34.0,Jabari Walker,SF,6-9,215,"July 30, 2002",us,R,Colorado,POR,https://www.basketball-reference.com/players/w/walkeja01.html
 10,10.0,Nassir Little,PF,6-5,220,"February 11, 2000",us,3,UNC,POR,https://www.basketball-reference.com/players/l/littlna01.html
 11,6.0,Keon Johnson,SG,6-5,186,"March 10, 2002",us,1,Tennessee,POR,https://www.basketball-reference.com/players/j/johnske07.html
@@ -413,9 +413,9 @@
 15,,Ibou Badji,C,7-1,240,"October 13, 2002",sn,R,,POR,https://www.basketball-reference.com/players/b/badjiib01.html
 0,40.0,Harrison Barnes,PF,6-8,225,"May 30, 1992",us,10,UNC,SAC,https://www.basketball-reference.com/players/b/barneha02.html
 1,10.0,Domantas Sabonis,PF,6-11,240,"May 3, 1996",us,6,Gonzaga,SAC,https://www.basketball-reference.com/players/s/sabondo01.html
-2,9.0,Kevin Huerter,SG,6-7,190,"August 27, 1998",us,4,Maryland,SAC,https://www.basketball-reference.com/players/h/huertke01.html
-3,0.0,Malik Monk,SG,6-3,200,"February 4, 1998",us,5,Kentucky,SAC,https://www.basketball-reference.com/players/m/monkma01.html
-4,15.0,Davion Mitchell,PG,6-2,205,"September 5, 1998",us,1,"Auburn, Baylor",SAC,https://www.basketball-reference.com/players/m/mitchda01.html
+2,0.0,Malik Monk,SG,6-3,200,"February 4, 1998",us,5,Kentucky,SAC,https://www.basketball-reference.com/players/m/monkma01.html
+3,15.0,Davion Mitchell,PG,6-2,205,"September 5, 1998",us,1,"Auburn, Baylor",SAC,https://www.basketball-reference.com/players/m/mitchda01.html
+4,9.0,Kevin Huerter,SG,6-7,190,"August 27, 1998",us,4,Maryland,SAC,https://www.basketball-reference.com/players/h/huertke01.html
 5,13.0,Keegan Murray,SF,6-8,215,"August 19, 2000",us,R,Iowa,SAC,https://www.basketball-reference.com/players/m/murrake02.html
 6,5.0,De'Aaron Fox,PG,6-3,185,"December 20, 1997",us,5,Kentucky,SAC,https://www.basketball-reference.com/players/f/foxde01.html
 7,41.0,Trey Lyles,PF,6-9,234,"November 5, 1995",ca,7,Kentucky,SAC,https://www.basketball-reference.com/players/l/lylestr01.html
@@ -427,14 +427,15 @@
 13,25.0,Alex Len,C,7-0,250,"June 16, 1993",ua,9,Maryland,SAC,https://www.basketball-reference.com/players/l/lenal01.html
 14,88.0,Neemias Queta,C,7-0,245,"July 13, 1999",pt,1,Utah State University,SAC,https://www.basketball-reference.com/players/q/quetane01.html
 15,23.0,Keon Ellis,SG,6-6,175,"January 8, 2000",us,R,"Florida SouthWestern State College, Alabama",SAC,https://www.basketball-reference.com/players/e/elliske01.html
+16,35.0,PJ Dozier,SG,6-6,205,"October 25, 1996",us,5,South Carolina,SAC,https://www.basketball-reference.com/players/d/doziepj01.html
 0,33.0,Tre Jones,PG,6-1,185,"January 8, 2000",us,2,Duke,SAS,https://www.basketball-reference.com/players/j/jonestr01.html
 1,17.0,Doug McDermott,SF,6-7,225,"January 3, 1992",us,8,Creighton,SAS,https://www.basketball-reference.com/players/m/mcderdo01.html
 2,3.0,Keldon Johnson,SF,6-5,220,"October 11, 1999",us,3,Kentucky,SAS,https://www.basketball-reference.com/players/j/johnske04.html
 3,10.0,Jeremy Sochan,PF,6-9,230,"May 20, 2003",us,R,Baylor,SAS,https://www.basketball-reference.com/players/s/sochaje01.html
 4,25.0,Jakob Poeltl,C,7-1,245,"October 15, 1995",at,6,Utah,SAS,https://www.basketball-reference.com/players/p/poeltja01.html
 5,7.0,Josh Richardson,SG,6-5,200,"September 15, 1993",us,7,Tennessee,SAS,https://www.basketball-reference.com/players/r/richajo01.html
-6,18.0,Isaiah Roby,PF,6-8,230,"February 3, 1998",us,3,Nebraska,SAS,https://www.basketball-reference.com/players/r/robyis01.html
-7,23.0,Zach Collins,PF,6-11,250,"November 19, 1997",us,4,Gonzaga,SAS,https://www.basketball-reference.com/players/c/colliza01.html
+6,23.0,Zach Collins,PF,6-11,250,"November 19, 1997",us,4,Gonzaga,SAS,https://www.basketball-reference.com/players/c/colliza01.html
+7,18.0,Isaiah Roby,PF,6-8,230,"February 3, 1998",us,3,Nebraska,SAS,https://www.basketball-reference.com/players/r/robyis01.html
 8,31.0,Keita Bates-Diop,SF,6-8,229,"January 23, 1996",us,4,Ohio State,SAS,https://www.basketball-reference.com/players/b/bateske01.html
 9,24.0,Devin Vassell,SG,6-5,200,"August 23, 2000",us,2,Florida State,SAS,https://www.basketball-reference.com/players/v/vassede01.html
 10,22.0,Malaki Branham,SF,6-5,180,"May 12, 2003",us,R,Ohio State,SAS,https://www.basketball-reference.com/players/b/branhma01.html
@@ -468,8 +469,8 @@
 4,24.0,Walker Kessler,C,7-1,245,"July 26, 2001",us,R,"UNC, Auburn",UTA,https://www.basketball-reference.com/players/k/kesslwa01.html
 5,41.0,Kelly Olynyk,PF,6-11,240,"April 19, 1991",ca,9,Gonzaga,UTA,https://www.basketball-reference.com/players/o/olynyke01.html
 6,0.0,Talen Horton-Tucker,SG,6-4,234,"November 25, 2000",us,3,Iowa State,UTA,https://www.basketball-reference.com/players/h/hortota01.html
-7,2.0,Collin Sexton,SG,6-1,190,"January 4, 1999",us,4,Alabama,UTA,https://www.basketball-reference.com/players/s/sextoco01.html
-8,11.0,Mike Conley,PG,6-1,175,"October 11, 1987",us,15,Ohio State,UTA,https://www.basketball-reference.com/players/c/conlemi01.html
+7,11.0,Mike Conley,PG,6-1,175,"October 11, 1987",us,15,Ohio State,UTA,https://www.basketball-reference.com/players/c/conlemi01.html
+8,2.0,Collin Sexton,SG,6-1,190,"January 4, 1999",us,4,Alabama,UTA,https://www.basketball-reference.com/players/s/sextoco01.html
 9,22.0,Rudy Gay,SF,6-8,250,"August 17, 1986",us,16,UConn,UTA,https://www.basketball-reference.com/players/g/gayru01.html
 10,6.0,Nickeil Alexander-Walker,SG,6-6,205,"September 2, 1998",ca,3,Virginia Tech,UTA,https://www.basketball-reference.com/players/a/alexani01.html
 11,16.0,Simone Fontecchio,SF,6-8,209,"December 9, 1995",it,R,,UTA,https://www.basketball-reference.com/players/f/fontesi01.html
@@ -478,8 +479,8 @@
 14,10.0,Leandro Bolmaro,SG,6-6,200,"September 11, 2000",ar,1,,UTA,https://www.basketball-reference.com/players/b/bolmale01.html
 15,25.0,Micah Potter,PF,6-10,248,"April 6, 1998",us,1,"Ohio State, Wisconsin",UTA,https://www.basketball-reference.com/players/p/pottemi01.html
 16,,Johnny Juzang,SF,6-7,215,"March 17, 2001",us,R,"Kentucky, UCLA",UTA,https://www.basketball-reference.com/players/j/juzanjo01.html
-0,21.0,Daniel Gafford,C,6-10,234,"October 1, 1998",us,3,Arkansas,WAS,https://www.basketball-reference.com/players/g/gaffoda01.html
-1,33.0,Kyle Kuzma,PF,6-9,221,"July 24, 1995",us,5,Utah,WAS,https://www.basketball-reference.com/players/k/kuzmaky01.html
+0,33.0,Kyle Kuzma,PF,6-9,221,"July 24, 1995",us,5,Utah,WAS,https://www.basketball-reference.com/players/k/kuzmaky01.html
+1,21.0,Daniel Gafford,C,6-10,234,"October 1, 1998",us,3,Arkansas,WAS,https://www.basketball-reference.com/players/g/gaffoda01.html
 2,9.0,Deni Avdija,SF,6-9,210,"January 3, 2001",il,2,,WAS,https://www.basketball-reference.com/players/a/avdijde01.html
 3,6.0,Kristaps Porziņģis,PF,7-3,240,"August 2, 1995",lv,6,,WAS,https://www.basketball-reference.com/players/p/porzikr01.html
 4,22.0,Monte Morris,PG,6-2,183,"June 27, 1995",us,5,Iowa State,WAS,https://www.basketball-reference.com/players/m/morrimo01.html
@@ -488,8 +489,8 @@
 7,16.0,Anthony Gill,PF,6-7,230,"October 17, 1992",us,2,"South Carolina, Virginia",WAS,https://www.basketball-reference.com/players/g/gillan01.html
 8,7.0,Jordan Goodwin,PG,6-3,200,"October 23, 1998",us,1,Saint Louis,WAS,https://www.basketball-reference.com/players/g/goodwjo01.html
 9,8.0,Rui Hachimura,PF,6-8,230,"February 8, 1998",jp,3,Gonzaga,WAS,https://www.basketball-reference.com/players/h/hachiru01.html
-10,3.0,Bradley Beal,SG,6-4,207,"June 28, 1993",us,10,Florida,WAS,https://www.basketball-reference.com/players/b/bealbr01.html
-11,67.0,Taj Gibson,PF,6-9,232,"June 24, 1985",us,13,USC,WAS,https://www.basketball-reference.com/players/g/gibsota01.html
+10,67.0,Taj Gibson,PF,6-9,232,"June 24, 1985",us,13,USC,WAS,https://www.basketball-reference.com/players/g/gibsota01.html
+11,3.0,Bradley Beal,SG,6-4,207,"June 28, 1993",us,10,Florida,WAS,https://www.basketball-reference.com/players/b/bealbr01.html
 12,55.0,Delon Wright,PG,6-5,185,"April 26, 1992",us,7,Utah,WAS,https://www.basketball-reference.com/players/w/wrighde01.html
 13,1.0,Johnny Davis,SG,6-5,196,"February 27, 2002",us,R,Wisconsin,WAS,https://www.basketball-reference.com/players/d/davisjo06.html
 14,13.0,Vernon Carey Jr.,C,6-9,270,"February 25, 2001",us,2,Duke,WAS,https://www.basketball-reference.com/players/c/careyve01.html
