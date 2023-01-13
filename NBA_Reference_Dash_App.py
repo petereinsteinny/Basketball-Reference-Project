@@ -505,7 +505,7 @@ app.layout = html.Div(children=[
                  options=[{'label':i, 'value':i} for i in standard_cols],
                  value='PTS',
                  placeholder="Select a Standard Statistic Here",
-                 searchable=True
+                 searchable=False
                 ),
         dcc.Graph(id='standard-chart', 
                        style={'display': 'flex',
@@ -525,7 +525,7 @@ app.layout = html.Div(children=[
                  options=[{'label':i, 'value':i} for i in advanced_cols],
                  value='WS',
                  placeholder="Select an Advanced Statistic here",
-                 searchable=True
+                 searchable=False
                 ),
     
         dcc.Graph(id='advanced-chart', 
