@@ -463,7 +463,7 @@ app.layout = html.Div(children=[
                      options=[{'label':i, 'value':i} for i in unique_teams],
                      value='ALL',
                      placeholder="Select a Team Here",
-                     searchable=True)
+                     searchable=False)
         ],style={'width': '33.33%', 'display': 'inline-block'}),
         
         #Creating the Player dropdown header and Dropdown here. Setting it to 33% and inline-block so it goes side by side with the other menus
