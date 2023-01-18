@@ -17,7 +17,7 @@ Ryan Arcidiacono,PG,28,NYK,https://www.basketball-reference.com/players/a/arcidr
 Deni Avdija,SF,22,WAS,https://www.basketball-reference.com/players/a/avdijde01.html,Active
 Deandre Ayton,C,24,PHO,https://www.basketball-reference.com/players/a/aytonde01.html,Active
 Udoka Azubuike,C,23,UTA,https://www.basketball-reference.com/players/a/azubuud01.html,Active
-Marvin Bagley III,PF,23,DET,https://www.basketball-reference.com/players/b/baglema01.html,Active
+Marvin Bagley III,C,23,DET,https://www.basketball-reference.com/players/b/baglema01.html,Active
 Patrick Baldwin Jr.,SF,20,GSW,https://www.basketball-reference.com/players/b/baldwpa01.html,Active
 LaMelo Ball,PG,21,CHO,https://www.basketball-reference.com/players/b/ballla01.html,Active
 Mo Bamba,C,24,ORL,https://www.basketball-reference.com/players/b/bambamo01.html,Active
@@ -57,8 +57,8 @@ Christian Braun,SG,21,DEN,https://www.basketball-reference.com/players/b/braunch
 Mikal Bridges,SF,26,PHO,https://www.basketball-reference.com/players/b/bridgmi01.html,Active
 Oshae Brissett,SF,24,IND,https://www.basketball-reference.com/players/b/brissos01.html,Active
 Malcolm Brogdon,PG,30,BOS,https://www.basketball-reference.com/players/b/brogdma01.html,Active
-Dillon Brooks,SG,27,MEM,https://www.basketball-reference.com/players/b/brookdi01.html,Active
-Bruce Brown,PG,26,DEN,https://www.basketball-reference.com/players/b/brownbr01.html,Active
+Dillon Brooks,SF,27,MEM,https://www.basketball-reference.com/players/b/brookdi01.html,Active
+Bruce Brown,SG,26,DEN,https://www.basketball-reference.com/players/b/brownbr01.html,Active
 Greg Brown III,PF,21,POR,https://www.basketball-reference.com/players/b/browngr01.html,Active
 Jaylen Brown,SF,26,BOS,https://www.basketball-reference.com/players/b/brownja02.html,Active
 Kendall Brown,SG,19,IND,https://www.basketball-reference.com/players/b/brownke03.html,Active
@@ -90,7 +90,7 @@ Jordan Clarkson,SG,30,UTA,https://www.basketball-reference.com/players/c/clarkjo
 Nic Claxton,C,23,BRK,https://www.basketball-reference.com/players/c/claxtni01.html,Active
 Amir Coffey,SG,25,LAC,https://www.basketball-reference.com/players/c/coffeam01.html,Active
 John Collins,PF,25,ATL,https://www.basketball-reference.com/players/c/collijo01.html,Active
-Zach Collins,PF,25,SAS,https://www.basketball-reference.com/players/c/colliza01.html,Active
+Zach Collins,C,25,SAS,https://www.basketball-reference.com/players/c/colliza01.html,Active
 Mike Conley,PG,35,UTA,https://www.basketball-reference.com/players/c/conlemi01.html,Active
 Pat Connaughton,SG,30,MIL,https://www.basketball-reference.com/players/c/connapa01.html,Active
 Robert Covington,PF,32,LAC,https://www.basketball-reference.com/players/c/covinro01.html,Active
@@ -117,7 +117,7 @@ Donte DiVincenzo,SG,26,GSW,https://www.basketball-reference.com/players/d/divind
 Luka Dončić,PG,23,DAL,https://www.basketball-reference.com/players/d/doncilu01.html,Active
 Tyler Dorsey,SG,26,DAL,https://www.basketball-reference.com/players/d/dorsety01.html,Active
 Luguentz Dort,SG,23,OKC,https://www.basketball-reference.com/players/d/dortlu01.html,Active
-Ayo Dosunmu,PG,23,CHI,https://www.basketball-reference.com/players/d/dosunay01.html,Active
+Ayo Dosunmu,SG,23,CHI,https://www.basketball-reference.com/players/d/dosunay01.html,Active
 Devon Dotson,PG,23,WAS,https://www.basketball-reference.com/players/d/dotsode01.html,Active
 Jeff Dowtin,PG,25,TOR,https://www.basketball-reference.com/players/d/dowtije01.html,Active
 PJ Dozier,SG,26,SAC,https://www.basketball-reference.com/players/d/doziepj01.html,Active
@@ -142,17 +142,17 @@ Trent Forrest,PG,24,ATL,https://www.basketball-reference.com/players/f/forretr01
 Michael Foster Jr.,PF,20,PHI,https://www.basketball-reference.com/players/f/fostemi02.html,Active
 Evan Fournier,SG,30,NYK,https://www.basketball-reference.com/players/f/fournev01.html,Active
 De'Aaron Fox,PG,25,SAC,https://www.basketball-reference.com/players/f/foxde01.html,Active
-Markelle Fultz,SG,24,ORL,https://www.basketball-reference.com/players/f/fultzma01.html,Active
+Markelle Fultz,PG,24,ORL,https://www.basketball-reference.com/players/f/fultzma01.html,Active
 Wenyen Gabriel,PF,25,LAL,https://www.basketball-reference.com/players/g/gabriwe01.html,Active
 Daniel Gafford,C,24,WAS,https://www.basketball-reference.com/players/g/gaffoda01.html,Active
 Darius Garland,PG,23,CLE,https://www.basketball-reference.com/players/g/garlada01.html,Active
 Usman Garuba,PF,20,HOU,https://www.basketball-reference.com/players/g/garubus01.html,Active
 Luka Garza,C,24,MIN,https://www.basketball-reference.com/players/g/garzalu01.html,Active
-Rudy Gay,SF,36,UTA,https://www.basketball-reference.com/players/g/gayru01.html,Active
+Rudy Gay,PF,36,UTA,https://www.basketball-reference.com/players/g/gayru01.html,Active
 Paul George,SF,32,LAC,https://www.basketball-reference.com/players/g/georgpa01.html,Active
-Taj Gibson,PF,37,WAS,https://www.basketball-reference.com/players/g/gibsota01.html,Active
+Taj Gibson,C,37,WAS,https://www.basketball-reference.com/players/g/gibsota01.html,Active
 Josh Giddey,SG,20,OKC,https://www.basketball-reference.com/players/g/giddejo01.html,Active
-Shai Gilgeous-Alexander,SG,24,OKC,https://www.basketball-reference.com/players/g/gilgesh01.html,Active
+Shai Gilgeous-Alexander,PG,24,OKC,https://www.basketball-reference.com/players/g/gilgesh01.html,Active
 Anthony Gill,PF,30,WAS,https://www.basketball-reference.com/players/g/gillan01.html,Active
 Rudy Gobert,C,30,MIN,https://www.basketball-reference.com/players/g/goberru01.html,Active
 Jordan Goodwin,PG,24,WAS,https://www.basketball-reference.com/players/g/goodwjo01.html,Active
@@ -168,14 +168,14 @@ Javonte Green,SG,29,CHI,https://www.basketball-reference.com/players/g/greenja02
 Jeff Green,PF,36,DEN,https://www.basketball-reference.com/players/g/greenje02.html,Active
 Josh Green,SG,22,DAL,https://www.basketball-reference.com/players/g/greenjo02.html,Active
 AJ Griffin,SF,19,ATL,https://www.basketball-reference.com/players/g/griffaj01.html,Active
-Blake Griffin,PF,33,BOS,https://www.basketball-reference.com/players/g/griffbl01.html,Active
+Blake Griffin,C,33,BOS,https://www.basketball-reference.com/players/g/griffbl01.html,Active
 Quentin Grimes,SG,22,NYK,https://www.basketball-reference.com/players/g/grimequ01.html,Active
 Rui Hachimura,PF,24,WAS,https://www.basketball-reference.com/players/h/hachiru01.html,Active
 Tyrese Haliburton,PG,22,IND,https://www.basketball-reference.com/players/h/halibty01.html,Active
 Jordan Hall,SF,21,SAS,https://www.basketball-reference.com/players/h/halljo02.html,Active
 R.J. Hampton,PG,21,ORL,https://www.basketball-reference.com/players/h/hamptrj01.html,Active
 Tim Hardaway Jr.,SG,30,DAL,https://www.basketball-reference.com/players/h/hardati02.html,Active
-James Harden,SG,33,PHI,https://www.basketball-reference.com/players/h/hardeja01.html,Active
+James Harden,PG,33,PHI,https://www.basketball-reference.com/players/h/hardeja01.html,Active
 Jaden Hardy,SG,20,DAL,https://www.basketball-reference.com/players/h/hardyja02.html,Active
 Ron Harper Jr.,SF,22,TOR,https://www.basketball-reference.com/players/h/harpero02.html,Active
 Montrezl Harrell,C,29,PHI,https://www.basketball-reference.com/players/h/harremo01.html,Active
@@ -183,9 +183,9 @@ Gary Harris,SG,28,ORL,https://www.basketball-reference.com/players/h/harriga01.h
 Joe Harris,SG,31,BRK,https://www.basketball-reference.com/players/h/harrijo01.html,Active
 Kevon Harris,SG,25,ORL,https://www.basketball-reference.com/players/h/harrike01.html,Active
 Tobias Harris,PF,30,PHI,https://www.basketball-reference.com/players/h/harrito02.html,Active
-Josh Hart,SG,27,POR,https://www.basketball-reference.com/players/h/hartjo01.html,Active
+Josh Hart,SF,27,POR,https://www.basketball-reference.com/players/h/hartjo01.html,Active
 Isaiah Hartenstein,C,24,NYK,https://www.basketball-reference.com/players/h/harteis01.html,Active
-Udonis Haslem,PF,42,MIA,https://www.basketball-reference.com/players/h/hasleud01.html,Active
+Udonis Haslem,C,42,MIA,https://www.basketball-reference.com/players/h/hasleud01.html,Active
 Sam Hauser,PF,25,BOS,https://www.basketball-reference.com/players/h/hausesa01.html,Active
 Jaxson Hayes,C,22,NOP,https://www.basketball-reference.com/players/h/hayesja02.html,Active
 Killian Hayes,PG,21,DET,https://www.basketball-reference.com/players/h/hayeski01.html,Active
@@ -193,14 +193,14 @@ Gordon Hayward,SF,32,CHO,https://www.basketball-reference.com/players/h/haywago0
 Juancho Hernangómez,PF,27,TOR,https://www.basketball-reference.com/players/h/hernaju01.html,Active
 Willy Hernangómez,C,28,NOP,https://www.basketball-reference.com/players/h/hernawi01.html,Active
 Tyler Herro,SG,23,MIA,https://www.basketball-reference.com/players/h/herroty01.html,Active
-Buddy Hield,SG,30,IND,https://www.basketball-reference.com/players/h/hieldbu01.html,Active
+Buddy Hield,SF,30,IND,https://www.basketball-reference.com/players/h/hieldbu01.html,Active
 Haywood Highsmith,SF,26,MIA,https://www.basketball-reference.com/players/h/highsha01.html,Active
 George Hill,PG,36,MIL,https://www.basketball-reference.com/players/h/hillge01.html,Active
 Malcolm Hill,SF,27,CHI,https://www.basketball-reference.com/players/h/hillma01.html,Active
 Aaron Holiday,PG,26,ATL,https://www.basketball-reference.com/players/h/holidaa01.html,Active
 Jrue Holiday,PG,32,MIL,https://www.basketball-reference.com/players/h/holidjr01.html,Active
 Justin Holiday,SG,33,ATL,https://www.basketball-reference.com/players/h/holidju01.html,Active
-Richaun Holmes,PF,29,SAC,https://www.basketball-reference.com/players/h/holmeri01.html,Active
+Richaun Holmes,C,29,SAC,https://www.basketball-reference.com/players/h/holmeri01.html,Active
 Al Horford,C,36,BOS,https://www.basketball-reference.com/players/h/horfoal01.html,Active
 Talen Horton-Tucker,SG,22,UTA,https://www.basketball-reference.com/players/h/hortota01.html,Active
 Danuel House Jr.,SF,29,PHI,https://www.basketball-reference.com/players/h/houseda01.html,Active
@@ -209,13 +209,13 @@ Trevor Hudgins,PG,23,HOU,https://www.basketball-reference.com/players/h/hudgitr0
 Kevin Huerter,SG,24,SAC,https://www.basketball-reference.com/players/h/huertke01.html,Active
 De'Andre Hunter,SF,25,ATL,https://www.basketball-reference.com/players/h/huntede01.html,Active
 Bones Hyland,PG,22,DEN,https://www.basketball-reference.com/players/h/hylanbo01.html,Active
-Serge Ibaka,PF,33,MIL,https://www.basketball-reference.com/players/i/ibakase01.html,Active
+Serge Ibaka,C,33,MIL,https://www.basketball-reference.com/players/i/ibakase01.html,Active
 Andre Iguodala,SF,39,GSW,https://www.basketball-reference.com/players/i/iguodan01.html,Active
 Joe Ingles,SF,35,MIL,https://www.basketball-reference.com/players/i/inglejo01.html,Active
 Brandon Ingram,SF,25,NOP,https://www.basketball-reference.com/players/i/ingrabr01.html,Active
 Kyrie Irving,PG,30,BRK,https://www.basketball-reference.com/players/i/irvinky01.html,Active
 Jaden Ivey,SG,20,DET,https://www.basketball-reference.com/players/i/iveyja01.html,Active
-Isaiah Jackson,PF,21,IND,https://www.basketball-reference.com/players/j/jacksis01.html,Active
+Isaiah Jackson,C,21,IND,https://www.basketball-reference.com/players/j/jacksis01.html,Active
 Jaren Jackson Jr.,C,23,MEM,https://www.basketball-reference.com/players/j/jacksja02.html,Active
 Justin Jackson,SF,27,BOS,https://www.basketball-reference.com/players/j/jacksju01.html,Active
 Reggie Jackson,PG,32,LAC,https://www.basketball-reference.com/players/j/jacksre01.html,Active
@@ -248,7 +248,7 @@ Braxton Key,SF,25,DET,https://www.basketball-reference.com/players/k/keybr01.htm
 Corey Kispert,SF,23,WAS,https://www.basketball-reference.com/players/k/kispeco01.html,Active
 Maxi Kleber,C,31,DAL,https://www.basketball-reference.com/players/k/klebima01.html,Active
 Nathan Knight,PF,25,MIN,https://www.basketball-reference.com/players/k/knighna01.html,Active
-Kevin Knox,SF,23,DET,https://www.basketball-reference.com/players/k/knoxke01.html,Active
+Kevin Knox,PF,23,DET,https://www.basketball-reference.com/players/k/knoxke01.html,Active
 Christian Koloko,C,22,TOR,https://www.basketball-reference.com/players/k/kolokch01.html,Active
 John Konchar,SG,26,MEM,https://www.basketball-reference.com/players/k/konchjo01.html,Active
 Furkan Korkmaz,SG,25,PHI,https://www.basketball-reference.com/players/k/korkmfu01.html,Active
@@ -273,7 +273,7 @@ Kawhi Leonard,SF,31,LAC,https://www.basketball-reference.com/players/l/leonaka01
 Caris LeVert,SG,28,CLE,https://www.basketball-reference.com/players/l/leverca01.html,Active
 Kira Lewis Jr.,PG,21,NOP,https://www.basketball-reference.com/players/l/lewiski01.html,Active
 Damian Lillard,PG,32,POR,https://www.basketball-reference.com/players/l/lillada01.html,Active
-Nassir Little,PF,22,POR,https://www.basketball-reference.com/players/l/littlna01.html,Active
+Nassir Little,SF,22,POR,https://www.basketball-reference.com/players/l/littlna01.html,Active
 Isaiah Livers,PF,24,DET,https://www.basketball-reference.com/players/l/liveris01.html,Active
 Kenneth Lofton Jr.,PF,20,MEM,https://www.basketball-reference.com/players/l/loftoke01.html,Active
 Kevon Looney,C,26,GSW,https://www.basketball-reference.com/players/l/looneke01.html,Active
@@ -294,7 +294,7 @@ Cody Martin,SF,27,CHO,https://www.basketball-reference.com/players/m/martico01.h
 Kenyon Martin Jr.,SF,22,HOU,https://www.basketball-reference.com/players/m/martike04.html,Active
 Tyrese Martin,SG,23,ATL,https://www.basketball-reference.com/players/m/martity01.html,Active
 Garrison Mathews,SG,26,HOU,https://www.basketball-reference.com/players/m/mathega01.html,Active
-Bennedict Mathurin,SG,20,IND,https://www.basketball-reference.com/players/m/mathube01.html,Active
+Bennedict Mathurin,SF,20,IND,https://www.basketball-reference.com/players/m/mathube01.html,Active
 Wesley Matthews,SG,36,MIL,https://www.basketball-reference.com/players/m/matthwe02.html,Active
 Tyrese Maxey,SG,22,PHI,https://www.basketball-reference.com/players/m/maxeyty01.html,Active
 Miles McBride,PG,22,NYK,https://www.basketball-reference.com/players/m/mcbrimi01.html,Active
@@ -341,17 +341,17 @@ Zeke Nnaji,PF,22,DEN,https://www.basketball-reference.com/players/n/nnajize01.ht
 Nerlens Noel,C,28,DET,https://www.basketball-reference.com/players/n/noelne01.html,Active
 Jaylen Nowell,SG,23,MIN,https://www.basketball-reference.com/players/n/nowelja01.html,Active
 Frank Ntilikina,PG,24,DAL,https://www.basketball-reference.com/players/n/ntilila01.html,Active
-Kendrick Nunn,PG,27,LAL,https://www.basketball-reference.com/players/n/nunnke01.html,Active
+Kendrick Nunn,SG,27,LAL,https://www.basketball-reference.com/players/n/nunnke01.html,Active
 Jusuf Nurkić,C,28,POR,https://www.basketball-reference.com/players/n/nurkiju01.html,Active
 Jordan Nwora,SF,24,MIL,https://www.basketball-reference.com/players/n/nworajo01.html,Active
 Royce O'Neale,SF,29,BRK,https://www.basketball-reference.com/players/o/onealro01.html,Active
-Chuma Okeke,PF,24,ORL,https://www.basketball-reference.com/players/o/okekech01.html,Active
+Chuma Okeke,SF,24,ORL,https://www.basketball-reference.com/players/o/okekech01.html,Active
 Josh Okogie,SG,24,PHO,https://www.basketball-reference.com/players/o/okogijo01.html,Active
 Onyeka Okongwu,C,22,ATL,https://www.basketball-reference.com/players/o/okongon01.html,Active
-Isaac Okoro,SG,22,CLE,https://www.basketball-reference.com/players/o/okorois01.html,Active
+Isaac Okoro,SF,22,CLE,https://www.basketball-reference.com/players/o/okorois01.html,Active
 KZ Okpala,PF,23,SAC,https://www.basketball-reference.com/players/o/okpalkz01.html,Active
 Victor Oladipo,SG,30,MIA,https://www.basketball-reference.com/players/o/oladivi01.html,Active
-Kelly Olynyk,PF,31,UTA,https://www.basketball-reference.com/players/o/olynyke01.html,Active
+Kelly Olynyk,C,31,UTA,https://www.basketball-reference.com/players/o/olynyke01.html,Active
 Eugene Omoruyi,SF,25,OKC,https://www.basketball-reference.com/players/o/omorueu01.html,Active
 Cedi Osman,SF,27,CLE,https://www.basketball-reference.com/players/o/osmande01.html,Active
 Kelly Oubre Jr.,SF,27,CHO,https://www.basketball-reference.com/players/o/oubreke01.html,Active
@@ -363,12 +363,12 @@ Scotty Pippen Jr.,PG,22,LAL,https://www.basketball-reference.com/players/p/pippe
 Mason Plumlee,C,32,CHO,https://www.basketball-reference.com/players/p/plumlma01.html,Active
 Jakob Poeltl,C,27,SAS,https://www.basketball-reference.com/players/p/poeltja01.html,Active
 Aleksej Pokusevski,PF,21,OKC,https://www.basketball-reference.com/players/p/pokusal01.html,Active
-Jordan Poole,SG,23,GSW,https://www.basketball-reference.com/players/p/poolejo01.html,Active
+Jordan Poole,PG,23,GSW,https://www.basketball-reference.com/players/p/poolejo01.html,Active
 Kevin Porter Jr.,PG,22,HOU,https://www.basketball-reference.com/players/p/porteke02.html,Active
 Michael Porter Jr.,SF,24,DEN,https://www.basketball-reference.com/players/p/portemi01.html,Active
 Otto Porter Jr.,SF,29,TOR,https://www.basketball-reference.com/players/p/porteot01.html,Active
 Bobby Portis,PF,27,MIL,https://www.basketball-reference.com/players/p/portibo01.html,Active
-Kristaps Porziņģis,PF,27,WAS,https://www.basketball-reference.com/players/p/porzikr01.html,Active
+Kristaps Porziņģis,C,27,WAS,https://www.basketball-reference.com/players/p/porzikr01.html,Active
 Micah Potter,PF,24,UTA,https://www.basketball-reference.com/players/p/pottemi01.html,Active
 Dwight Powell,C,31,DAL,https://www.basketball-reference.com/players/p/poweldw01.html,Active
 Norman Powell,SG,29,LAC,https://www.basketball-reference.com/players/p/powelno01.html,Active
@@ -376,7 +376,7 @@ Jason Preston,PG,23,LAC,https://www.basketball-reference.com/players/p/prestja01
 Joshua Primo,SG,20,SAS,https://www.basketball-reference.com/players/p/primojo01.html,Active
 Taurean Prince,SF,28,MIN,https://www.basketball-reference.com/players/p/princta02.html,Active
 Payton Pritchard,PG,25,BOS,https://www.basketball-reference.com/players/p/pritcpa01.html,Active
-Trevelin Queen,PG,25,IND,https://www.basketball-reference.com/players/q/queentr01.html,Active
+Trevelin Queen,SG,25,IND,https://www.basketball-reference.com/players/q/queentr01.html,Active
 Neemias Queta,C,23,SAC,https://www.basketball-reference.com/players/q/quetane01.html,Active
 Immanuel Quickley,PG,23,NYK,https://www.basketball-reference.com/players/q/quickim01.html,Active
 Julius Randle,PF,28,NYK,https://www.basketball-reference.com/players/r/randlju01.html,Active
@@ -385,7 +385,7 @@ Cam Reddish,SF,23,NYK,https://www.basketball-reference.com/players/r/reddica01.h
 Davon Reed,SG,27,DEN,https://www.basketball-reference.com/players/r/reedda01.html,Active
 Paul Reed,C,23,PHI,https://www.basketball-reference.com/players/r/reedpa01.html,Active
 Naz Reid,C,23,MIN,https://www.basketball-reference.com/players/r/reidna01.html,Active
-Jared Rhoden,G,23,DET,https://www.basketball-reference.com/players/r/rhodeja01.html,Active
+Jared Rhoden,SG,23,DET,https://www.basketball-reference.com/players/r/rhodeja01.html,Active
 Nick Richards,C,25,CHO,https://www.basketball-reference.com/players/r/richani01.html,Active
 Josh Richardson,SG,29,SAS,https://www.basketball-reference.com/players/r/richajo01.html,Active
 Austin Rivers,SG,30,MIN,https://www.basketball-reference.com/players/r/riverau01.html,Active
@@ -398,12 +398,13 @@ David Roddy,PF,21,MEM,https://www.basketball-reference.com/players/r/roddyda01.h
 Ryan Rollins,PG,20,GSW,https://www.basketball-reference.com/players/r/rolliry01.html,Active
 Derrick Rose,PG,34,NYK,https://www.basketball-reference.com/players/r/rosede01.html,Active
 Terrence Ross,SG,31,ORL,https://www.basketball-reference.com/players/r/rosste01.html,Active
-Terry Rozier,PG,28,CHO,https://www.basketball-reference.com/players/r/roziete01.html,Active
+Terry Rozier,SG,28,CHO,https://www.basketball-reference.com/players/r/roziete01.html,Active
+Ricky Rubio,PG,32,CLE,https://www.basketball-reference.com/players/r/rubiori01.html,Active
 D'Angelo Russell,PG,26,MIN,https://www.basketball-reference.com/players/r/russeda01.html,Active
 Matt Ryan,SF,25,TOT,https://www.basketball-reference.com/players/r/ryanma01.html,Active
 Matt Ryan,SF,25,LAL,https://www.basketball-reference.com/players/r/ryanma01.html,Active
 Matt Ryan,SF,25,MIN,https://www.basketball-reference.com/players/r/ryanma01.html,Active
-Domantas Sabonis,PF,26,SAC,https://www.basketball-reference.com/players/s/sabondo01.html,Active
+Domantas Sabonis,C,26,SAC,https://www.basketball-reference.com/players/s/sabondo01.html,Active
 Dario Šarić,PF,28,PHO,https://www.basketball-reference.com/players/s/saricda01.html,Active
 Jordan Schakel,SF,24,WAS,https://www.basketball-reference.com/players/s/schakjo01.html,Active
 Admiral Schofield,PF,25,ORL,https://www.basketball-reference.com/players/s/schofad01.html,Active
@@ -426,7 +427,7 @@ Ish Smith,PG,34,DEN,https://www.basketball-reference.com/players/s/smithis01.htm
 Jabari Smith Jr.,PF,19,HOU,https://www.basketball-reference.com/players/s/smithja05.html,Active
 Jalen Smith,PF,22,IND,https://www.basketball-reference.com/players/s/smithja04.html,Active
 Jeremy Sochan,PF,19,SAS,https://www.basketball-reference.com/players/s/sochaje01.html,Active
-Jaden Springer,PG,20,PHI,https://www.basketball-reference.com/players/s/sprinja01.html,Active
+Jaden Springer,SG,20,PHI,https://www.basketball-reference.com/players/s/sprinja01.html,Active
 Lamar Stevens,PF,25,CLE,https://www.basketball-reference.com/players/s/stevela01.html,Active
 Isaiah Stewart,C,21,DET,https://www.basketball-reference.com/players/s/stewais01.html,Active
 Max Strus,SF,26,MIA,https://www.basketball-reference.com/players/s/strusma01.html,Active
@@ -465,7 +466,7 @@ Jabari Walker,SF,20,POR,https://www.basketball-reference.com/players/w/walkeja01
 Kemba Walker,PG,32,DAL,https://www.basketball-reference.com/players/w/walkeke02.html,Active
 Lonnie Walker IV,SG,24,LAL,https://www.basketball-reference.com/players/w/walkelo01.html,Active
 John Wall,PG,32,LAC,https://www.basketball-reference.com/players/w/walljo01.html,Active
-T.J. Warren,SF,29,BRK,https://www.basketball-reference.com/players/w/warretj01.html,Active
+T.J. Warren,PF,29,BRK,https://www.basketball-reference.com/players/w/warretj01.html,Active
 Duane Washington Jr.,SG,22,PHO,https://www.basketball-reference.com/players/w/washidu02.html,Active
 P.J. Washington,PF,24,CHO,https://www.basketball-reference.com/players/w/washipj01.html,Active
 TyTy Washington Jr.,PG,21,HOU,https://www.basketball-reference.com/players/w/washity02.html,Active
@@ -475,7 +476,7 @@ Trendon Watford,PF,22,POR,https://www.basketball-reference.com/players/w/watfotr
 Peyton Watson,SG,20,DEN,https://www.basketball-reference.com/players/w/watsope01.html,Active
 Blake Wesley,SG,19,SAS,https://www.basketball-reference.com/players/w/weslebl01.html,Active
 Russell Westbrook,PG,34,LAL,https://www.basketball-reference.com/players/w/westbru01.html,Active
-Coby White,PG,22,CHI,https://www.basketball-reference.com/players/w/whiteco01.html,Active
+Coby White,SG,22,CHI,https://www.basketball-reference.com/players/w/whiteco01.html,Active
 Derrick White,SG,28,BOS,https://www.basketball-reference.com/players/w/whitede01.html,Active
 Jack White,SF,25,DEN,https://www.basketball-reference.com/players/w/whiteja03.html,Active
 Aaron Wiggins,SG,24,OKC,https://www.basketball-reference.com/players/w/wiggiaa01.html,Active
@@ -493,7 +494,7 @@ Ziaire Williams,SF,21,MEM,https://www.basketball-reference.com/players/w/willizi
 Zion Williamson,PF,22,NOP,https://www.basketball-reference.com/players/w/willizi01.html,Active
 Justise Winslow,SF,26,POR,https://www.basketball-reference.com/players/w/winslju01.html,Active
 James Wiseman,C,21,GSW,https://www.basketball-reference.com/players/w/wisemja01.html,Active
-Christian Wood,PF,27,DAL,https://www.basketball-reference.com/players/w/woodch01.html,Active
+Christian Wood,C,27,DAL,https://www.basketball-reference.com/players/w/woodch01.html,Active
 Delon Wright,PG,30,WAS,https://www.basketball-reference.com/players/w/wrighde01.html,Active
 McKinley Wright IV,PG,24,DAL,https://www.basketball-reference.com/players/w/wrighmc01.html,Active
 Thaddeus Young,PF,34,TOR,https://www.basketball-reference.com/players/y/youngth01.html,Active
