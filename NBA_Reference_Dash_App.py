@@ -299,7 +299,7 @@ class Team():
         #Instantiating the Team class through retrieving their roster using the get_rosters function
         global rosters_df
         self.name=name
-        self.url='https://www.basketball-reference.com/teams/'+name+'/2023.html'
+        self.url='https://www.basketball-reference.com/teams/'+name+'/2024.html'
         if len(rosters_df)==0:
             rosters_df=self.get_rosters()
         elif name not in rosters_df['Tm'].tolist():
